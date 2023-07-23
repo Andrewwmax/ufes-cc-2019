@@ -1,0 +1,152 @@
+/* Trabalho de BD - Mr TOk V6 - Físico: */
+DROP SCHEMA IF EXISTS `DRTOK`;
+CREATE SCHEMA `DRTOK`;
+USE `DRTOK`;
+
+CREATE TABLE Endereco (
+	CEP INT NOT NULL,
+	rua VARCHAR(50) NOT NULL,
+	numero INT NOT NULL,
+	complemento VARCHAR(150) NOT NULL,
+	bairro VARCHAR(50) NOT NULL,
+	cidade VARCHAR(50) NOT NULL,
+	estado VARCHAR(50) NOT NULL,
+	pais VARCHAR(50) NOT NULL,
+	PRIMARY KEY (CEP)
+);
+
+CREATE TABLE Funcionario (
+	CPF CHAR(11) NOT NULL,
+	nome VARCHAR(50) NOT NULL,
+	rg CHAR(9) NOT NULL,
+	dataNascimento DATE NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	telefone CHAR(12) NOT NULL,
+	funcao VARCHAR(150) NOT NULL,
+	setor VARCHAR(50) NOT NULL,
+	tipoFuncionario INT NOT NULL CHECK(tipoFuncionario in (1,2)),
+	FKEnderecoCEP INT NOT NULL,
+	PRIMARY KEY (CPF),
+	CONSTRAINT FKFuncionario FOREIGN KEY (FKEnderecoCEP)
+		REFERENCES Endereco (CEP) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Estoque (
+	codEstoque INT NOT NULL AUTO_INCREMENT,
+	dcrEstoque VARCHAR(150) NOT NULL,
+	FKEnderecoCEP INT NOT NULL,
+	PRIMARY KEY (codEstoque),
+	CONSTRAINT FKEstoque FOREIGN KEY (FKEnderecoCEP)
+		REFERENCES Endereco (CEP) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Servico (
+	codServico INT NOT NULL AUTO_INCREMENT,
+	dcrServico VARCHAR(150) NOT NULL,
+	preco NUMERIC(10,2) NOT NULL,
+	PRIMARY KEY (codServico)
+);
+
+CREATE TABLE Produto (
+	codProduto INT NOT NULL AUTO_INCREMENT,
+	dcrProduto VARCHAR(150) NOT NULL,
+	nome VARCHAR(150) NOT NULL,
+	codBarras INT NOT NULL,
+	validade DATE NOT NULL,
+	preco NUMERIC(10,2) NOT NULL,
+	FKEstoqueCodEstoque INT NOT NULL,
+	PRIMARY KEY (codProduto),
+	CONSTRAINT FKProduto FOREIGN KEY (FKEstoqueCodEstoque)
+		REFERENCES Estoque (codEstoque) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Contracheque (
+	codContracheque INT NOT NULL AUTO_INCREMENT,
+	data DATE NOT NULL,
+	observacao VARCHAR(150) NOT NULL,
+	FKFuncionarioCPF CHAR(11) NOT NULL,
+	PRIMARY KEY (codContracheque),
+	CONSTRAINT FKContracheque FOREIGN KEY (FKFuncionarioCPF)
+		REFERENCES Funcionario (CPF) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Vencimento (
+	codVencimento INT NOT NULL AUTO_INCREMENT,
+	dcrVencimento VARCHAR(150) NOT NULL,
+	valor NUMERIC(10,2) NOT NULL CHECK(valor > 0),
+	tipoVencimento VARCHAR(50) NOT NULL CHECK(tipoVencimento in ('RECEITA','DESCONTO')),
+	FKContrachequeCodContracheque INT NOT NULL,
+	FKFuncionarioCPF CHAR(11) NOT NULL,
+	PRIMARY KEY (codVencimento),
+	CONSTRAINT FKVencimentoContraCheque FOREIGN KEY (FKContrachequeCodContracheque)
+		REFERENCES Contracheque (codContracheque) ON DELETE RESTRICT ON UPDATE RESTRICT,
+	CONSTRAINT FKVencimentoFuncionario FOREIGN KEY (FKFuncionarioCPF)
+		REFERENCES Funcionario (CPF) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Empresa (
+	CNPJ CHAR(14) NOT NULL,
+	InscricaoEstadual CHAR(9) NOT NULL,
+	Email VARCHAR(150) NOT NULL,
+	TelefoneFixo CHAR(12) NOT NULL,
+	Celular CHAR(12) NOT NULL,
+	Nome VARCHAR(50) NOT NULL,
+	especialidade VARCHAR(100) NOT NULL,
+	fidelidade DATE NOT NULL,
+	tipoEmpresa INT NOT NULL CHECK(tipoEmpresa in (1,2)),
+	FKEnderecoCEP INT NOT NULL,
+	PRIMARY KEY (CNPJ),
+	CONSTRAINT FKEmpresa FOREIGN KEY (FKEnderecoCEP)
+		REFERENCES Endereco (CEP) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Contrato (
+	codContrato INT NOT NULL AUTO_INCREMENT,
+	dcrContrato VARCHAR(150) NOT NULL,
+	valor NUMERIC(10,2) NOT NULL,
+	data DATE NOT NULL,
+	FKEmpresaCNPJ CHAR(14) NOT NULL,
+	PRIMARY KEY (codContrato),
+	CONSTRAINT FKContrato FOREIGN KEY (FKEmpresaCNPJ)
+		REFERENCES Empresa (CNPJ) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Aloca (
+	FKServicoCodServico INT NOT NULL,
+	FKFuncionarioCPF CHAR(11) NOT NULL,
+	PRIMARY KEY (FKServicoCodServico, FKFuncionarioCPF),
+	CONSTRAINT FKAlocaServico FOREIGN KEY (FKServicoCodServico)
+		REFERENCES Servico (codServico) ON DELETE RESTRICT ON UPDATE RESTRICT,
+	CONSTRAINT FKAlocaFuncionario FOREIGN KEY (FKFuncionarioCPF)
+		REFERENCES Funcionario (CPF) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Entrega (
+	FKEmpresaCNPJ CHAR(14) NOT NULL,
+	FKProdutoCodProduto INT NOT NULL,
+	PRIMARY Key (FKEmpresaCNPJ, FKProdutoCodProduto),
+	CONSTRAINT FKEntregaEmpresa FOREIGN KEY (FKEmpresaCNPJ)
+		REFERENCES Empresa (CNPJ) ON DELETE RESTRICT ON UPDATE RESTRICT,
+	CONSTRAINT FKEntregaProduto FOREIGN KEY (FKProdutoCodProduto)
+		REFERENCES Produto (codProduto) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Coleta (
+	FKServicoCodServico INT NOT NULL,
+	FKProdutoCodProduto INT NOT NULL,
+	PRIMARY Key (FKServicoCodServico, FKProdutoCodProduto),
+	CONSTRAINT FKColetaServico FOREIGN KEY (FKServicoCodServico)
+		REFERENCES Servico (codServico) ON DELETE RESTRICT ON UPDATE RESTRICT,
+	CONSTRAINT FKColetaProduto FOREIGN KEY (FKProdutoCodProduto)
+		REFERENCES Produto (codProduto) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE Inclui (
+	FKServicoCodServico INT NOT NULL,
+	FKContratoCodContrato INT NOT NULL,
+	PRIMARY Key (FKServicoCodServico, FKContratoCodContrato),
+	CONSTRAINT FKIncluiServico FOREIGN KEY (FKServicoCodServico)
+		REFERENCES Servico (codServico) ON DELETE RESTRICT ON UPDATE RESTRICT,
+	CONSTRAINT FKIncluiContrato FOREIGN KEY (FKContratoCodContrato)
+		REFERENCES Contrato (codContrato) ON DELETE RESTRICT ON UPDATE RESTRICT
+);

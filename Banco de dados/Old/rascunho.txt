@@ -1,0 +1,188 @@
+MICROSOFT AZURE [https://azure.microsoft.com/en-us/services/]
+
+AI + Machine Learning, Analytics, Blockchain, Compute, Containers, Databases, Developer Tools, DevOps, Hybrid, Identity, Integration, Internet of Things, Management and Governance, Media, Migration, Mixed Reality, Mobile, Networking, Security, Storage, Web, Windows Virtual Desktop.
+
+
+
+
+Tipos de computação em nuvem
+Nem todas as nuvens são iguais e não há um tipo de computação em nuvem que seja ideal para todas as pessoas. Vários modelos, tipos e serviços diferentes evoluíram para ajudar a oferecer a solução certa para suas necessidades.
+
+Primeiro, você precisa determinar o tipo de implantação de nuvem ou a arquitetura de computação em nuvem, no qual seus serviços de nuvem serão implementados. Há três maneiras diferentes de implantar serviços de nuvem: em uma nuvem pública, nuvem privada ou nuvem híbrida.
+
+
+Nuvem pública
+As nuvens públicas pertencem a um provedor de serviço de nuvem terceirizado e são administradas por ele, que fornece recursos de computação (tais como servidores e armazenamento) pela Internet. O Microsoft Azure é um exemplo de nuvem pública. Com uma nuvem pública, todo o hardware, software e outras infraestruturas de suporte são de propriedade e gerenciadas pelo provedor de nuvem. Você acessa esses serviços e gerencia sua conta usando um navegador da Web.
+
+Nuvem privada
+Uma nuvem privada se refere aos recursos de computação em nuvem usados exclusivamente por uma única empresa ou organização. Uma nuvem privada pode estar localizada fisicamente no datacenter local da empresa. Algumas empresas também pagam provedores de serviços terceirizados para hospedar sua nuvem privada. Uma nuvem privada é aquela em que os serviços e a infraestrutura são mantidos em uma rede privada.
+
+Nuvem híbrida
+Nuvens híbridas combinam nuvens públicas e privadas ligadas por uma tecnologia que permite que dados e aplicativos sejam compartilhados entre elas. Permitindo que os dados e os aplicativos se movam entre nuvens privadas e públicas, uma nuvem híbrida oferece à sua empresa maior flexibilidade, mais opções de implantação e ajuda a otimizar sua infraestrutura, segurança e conformidade existentes.
+
+Tipos de serviços de nuvem: IaaS, PaaS, sem servidor e SaaS
+A maioria dos serviços de computação em nuvem se enquadra em quatro categorias amplas: IaaS (infraestrutura como serviço), PaaS (plataforma como serviço), sem servidor e SaaS (software como serviço). Às vezes, eles são chamados de "pilha" de computação em nuvem, pois são criados uns sobre os outros. Saber o que eles são e como são diferentes ajuda a alcançar suas metas de negócios.
+
+IaaS (infraestrutura como serviço)
+A categoria mais básica de serviços de computação em nuvem. Com IaaS, você aluga a infraestrutura de TI – servidores e VMs (máquinas virtuais), armazenamento, redes e sistemas operacionais – de um provedor de nuvem com pagamento conforme o uso
+
+PaaS (plataforma como serviço)
+A plataforma como serviço refere-se aos serviços de computação em nuvem que fornecem um ambiente sob demanda para desenvolvimento, teste, fornecimento e gerenciamento de aplicativos de software. O PaaS foi criado para facilitar aos desenvolvedores criarem aplicativos móveis ou Web rapidamente, sem se preocupar com a configuração ou o gerenciamento de infraestrutura subjacente de servidores, armazenamento, rede e bancos de dados necessários para desenvolvimento.
+
+Computação sem servidor
+Sobrepondo-se ao PaaS, a computação sem servidor concentra-se na criação da funcionalidade de aplicativos, sem perder tempo com o gerenciamento contínuo dos servidores e da infraestrutura necessários para isso. O provedor em nuvem cuida da configuração, do planejamento de capacidade e do gerenciamento de servidores para você. As arquiteturas sem servidor são altamente escalonáveis e controladas por eventos, usando recursos apenas quando ocorre uma função ou um evento que desencadeie esse uso.
+
+SaaS (software como serviço)
+O software como serviço é um método para a distribuição de aplicativos de software pela Internet sob demanda e, normalmente, baseado em assinaturas. Com o SaaS, os provedores de nuvem hospedam e gerenciam o aplicativo de software e a infraestrutura subjacente e fazem manutenções, como atualizações de software e aplicação de patch de segurança. Os usuários conectam o aplicativo pela Internet, normalmente com um navegador da Web em seu telefone, tablet ou PC.
+
+Dicionário de termos comuns de computação em nuvem
+Usos da computação em nuvem
+Provavelmente você está usando computação em nuvem neste momento, mesmo sem perceber. Se você usa um serviço online para enviar email, editar documentos, ver filmes ou TV, ouvir música, jogar ou armazenar fotos e outros arquivos, é provável que a computação em nuvem esteja nos bastidores possibilitando tudo isso. Os primeiros serviços de computação em nuvem têm somente uma década, mas diversas organizações – de pequenas start-ups a corporações globais, de agências do governo a empresas sem fins lucrativos – estão adotando essa tecnologia por diversos motivos.
+
+Veja alguns exemplos do que é possível fazer hoje com os serviços de nuvem por meio de um provedor em nuvem:
+
+Crie aplicativos nativos da nuvem
+Crie, implante e dimensione aplicativos móveis, Web e APIs rapidamente. Aproveite as tecnologias e abordagens nativas da nuvem, como contêineres, Kubernetes, arquitetura de microsserviços, comunicação controlada por API e DevOps.
+
+Testar e criar aplicativos
+Reduza o custo e o tempo de desenvolvimento de aplicativos usando infraestruturas de nuvem que podem ser ampliadas ou reduzidas com facilidade.
+
+Armazenar, fazer backup e recuperar dados
+Proteja seus dados de maneira mais econômica – e em grande escala – transferindo-os pela Internet para um sistema de armazenamento em nuvem externo acessível em qualquer local e dispositivo.
+
+Analisar os dados
+Unifique seus dados entre equipes, divisões e locais na nuvem. Em seguida, use serviços de nuvem, como aprendizado de máquina e inteligência artificial, para descobrir insights e tomar decisões mais informadas.
+
+Transmitir áudio e vídeo
+Conecte-se ao seu público-alvo em qualquer lugar, a qualquer hora, em qualquer dispositivo com vídeo e áudio de alta definição com distribuição global.
+
+Inserir inteligência
+Use modelos inteligentes para ajudar a envolver os clientes e fornecer insights importantes com base nos dados capturados.
+
+Fornecer software sob demanda
+Também conhecido como SaaS (software como serviço), o software sob demanda permite que você ofereça as últimas versões de software e atualizações para os clientes – sempre que precisarem, onde quer que estejam.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AWS [https://aws.amazon.com/pt/products/?WICC=tile&tile=services]
+Serviços em destaque, Análises, Integração de aplicativos, AR e VR, Gerenciamento de custos da AWS, Blockchain, Aplicativos empresariais, Computação, Envolvimento de clientes, Banco de dados, Ferramentas de desenvolvedor, Computação de usuário final, Tecnologia de jogos, Internet das Coisas, Machine Learning, Gerenciamento e governança, Serviços de mídia, Migração e transferência, Plataforma móvel, Redes e entrega de conteúdo, Robótica, Satélite, Segurança, identidade e conformidade, Armazenamento.
+
+Como a computação em nuvem funciona?
+A computação em nuvem oferece uma forma de acessar servidores, armazenamento, bancos de dados e um conjunto amplo de serviços de aplicativos via Internet. Um provedor de serviços em nuvem, como a Amazon Web Services, é proprietária e faz a manutenção do hardware conectado à rede necessário para esses serviços de aplicativos, enquanto você provisiona e utiliza o que precisa por meio de um aplicativo web.
+
+
+
+
+
+
+
+
+
+
+
+[https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_em_nuvem]
+
+Corrida pela tecnologia
+Empresas como Amazon, Oracle, Google, IBM e Microsoft foram as primeiras a iniciar uma grande ofensiva nessa "nuvem de informação" (information cloud), que especialistas consideram uma "nova fronteira da era digital". Aos poucos, essa tecnologia vai deixando de ser utilizada apenas em laboratórios para ingressar nas empresas e, em breve, em computadores domésticos.
+
+O primeiro serviço na Internet a oferecer um ambiente operacional para os usuários—antigamente, disponível no endereço www.webos.org—foi criado por um estudante sueco, Fredrik Malmer, utilizando as linguagens XHTML e Javascript.
+
+Em 1999, foi criada nos EUA a empresa WebOS Inc., que comprou os direitos do sistema de Fredrik e licenciou uma série de tecnologias desenvolvidas nas universidades do Texas, Califórnia e Duke.
+
+Modelos de serviço
+Atualmente, a computação em nuvem é dividida em dez tipos:
+
+IaaS - Infrastructure as a Service ou Infraestrutura como Serviço (em português): refere-se a serviços on-line que fornecem APIs de alto nível usadas para desreferenciar vários detalhes de baixo nível da infra-estrutura de rede subjacente, como recursos de computação física, localização, particionamento de dados, dimensionamento, segurança, backup etc. Executa as máquinas virtuais como convidados. Pools de hipervisores dentro do sistema operacional de nuvem podem suportar um grande número de máquinas virtuais e a capacidade de escalonar os serviços de acordo com os diferentes requisitos dos clientes. Os contêineres Linux são executados em partições isoladas de um único kernel do Linux em execução diretamente no hardware físico. Cgroups e namespaces do Linux são as tecnologias subjacentes do kernel do Linux usadas para isolar, proteger e gerenciar os contêineres. Conteinerização oferece maior desempenho do que virtualização, porque não há sobrecarga de hipervisor. Além disso, a capacidade do contêiner é dimensionada automaticamente de maneira dinâmica com a carga computacional, o que elimina o problema de provisionamento excessivo e permite o faturamento baseado em uso.[3] As nuvens de IaaS geralmente oferecem recursos adicionais, como uma biblioteca de imagem de disco de máquina virtual, armazenamento bruto de bloco , armazenamento de arquivos ou objetos , firewalls, balanceadores de carga, endereços IP, VLANs ( redes locais virtuais ) e pacotes de software.[4] Os provedores de nuvem IaaS fornecem esses recursos sob demanda a partir de seus grandes pools de equipamentos instalados nos datacenters . Para conectividade de área ampla , os clientes podem usar a Internet ou as nuvens da operadora ( redes privadas virtuais dedicadas). Para implantar seus aplicativos, os usuários da nuvem instalam imagens do sistema operacional e seu software de aplicativo na infraestrutura de nuvem. Nesse modelo, o usuário da nuvem corrige e mantém os sistemas operacionais e o software do aplicativo.Provedores de nuvem geralmente cobram serviços IaaS em uma base de computação utilitária: o custo reflete a quantidade de recursos alocados e consumidos.
+PaaS - Plataform as a Service ou Plataforma como Serviço (em português): dá aos desenvolvedores as ferramentas necessárias para criar e hospedar aplicativos Web. A PaaS foi desenvolvida para proporcionar aos usuários o acesso aos componentes necessários para desenvolver e operar rapidamente aplicativos Web ou móveis na Internet, sem se preocupar com a configuração ou gerenciamento da infraestrutura subjacente dos servidores, armazenamento, redes e bancos de dados.. (p.ex.: IBM Bluemix, Windows Azure e Jelastic).[5]A definição do NIST de computação em nuvem define Plataforma como um serviço como:[6] A capacidade oferecida ao consumidor é implementar na infraestrutura em nuvem os aplicativos criados ou adquiridos pelo consumidor criados usando linguagens de programação, bibliotecas, serviços e ferramentas suportados pelo provedor. O consumidor não gerencia ou controla a infraestrutura de nuvem subjacente, incluindo rede, servidores, sistemas operacionais ou armazenamento, mas tem controle sobre os aplicativos implantados e possivelmente configurações para o ambiente de hospedagem de aplicativos.
+DaaS - Desktop as a Service ou Área de trabalho como serviço (em português): O desktop como serviço (DaaS) é uma solução de computação em nuvem na qual a infraestrutura de desktop virtual é terceirizada para um provedor terceirizado. A funcionalidade DaaS conta com o desktop virtual, que é uma sessão controlada pelo usuário ou uma máquina dedicada que transforma serviços de nuvem sob demanda para usuários e organizações em todo o mundo. Esse é um modelo eficiente no qual o provedor de serviços gerencia todas as responsabilidades de back-end que normalmente seriam fornecidas pelo software aplicativo.Desktop como um serviço também é conhecido como desktop virtual ou serviços de desktop hospedados. O DaaS facilita o gerenciamento de vários tipos de recursos de computadores, incluindo desktops, laptops, unidades de mão e thin clients. O DaaS usa execução distribuída ou execução remota, dependendo do tipo de implementação.  O DaaS é uma alternativa econômica para soluções de TI convencionais e é usado por organizações e empresas que exigem altos níveis de desempenho e disponibilidade. Além disso, o DaaS serve como uma solução ideal para pequenas organizações com recursos limitados.[7]
+SaaS - Software as a Service ou Software como Serviço (em português): O software como um serviço oferece um produto completo, executado e gerenciado pelo provedor de serviços. Na maioria dos casos, as pessoas que se referem ao software como um serviço estão se referindo às aplicações de usuário final. Com uma oferta de SaaS, não é necessário pensar sobre como o serviço é mantido ou como a infraestrutura subjacente é gerenciada, você só precisa pensar em como usará este tipo específico de software.(p.ex.: Google Docs , Microsoft SharePoint Online).[8]
+CaaS - Communication as a Service ou Comunicação como Serviço (em português): uso de uma solução de Comunicação Unificada hospedada em Data Center do provedor ou fabricante (p.ex.: Microsoft Lync).
+XaaS - Everything as a Service ou Tudo como Serviço (em português): quando se utiliza tudo, infraestrurura, plataformas, software, suporte, enfim, o que envolve T.I.C. (Tecnologia da Informação e Comunicação) como um Serviço. Tudo como um serviço oferece a flexibilidade para que usuários e empresas personalizem seus ambientes de computação para criar as experiências que desejam, tudo sob demanda. O XaaS é dependente de uma forte plataforma de serviços em nuvem e conectividade confiável à Internet para ganhar com sucesso tração e aceitação entre indivíduos e empresas.[9]
+DBaas - Data Base as a Service ou Banco de dados como Serviço (em português): O nome já deixa claro que essa modalidade é direcionada ao fornecimento de serviços para armazenamento e acesso de volumes de dados. A vantagem aqui é que o detentor da aplicação conta com maior flexibilidade para expandir o banco de dados, compartilhar as informações com outros sistemas, facilitar o acesso remoto por usuários autorizados, entre outros;[10]
+SECaaS - Security as a Service - ou Segurança como Serviço (em português): é um modelo de negócio, onde o provedor de serviço integra serviços de segurança em uma infraestrutura corporativa por meio mais eficiente do que indivíduos ou corporações podem prover por si próprias - quando o custo total de posse é considerado.[11]
+FaaS - Function as a Service - ou Função como Serviço (em português): é uma chamada de procedimento remoto hospedada em serviço que aproveita a computação sem servidor para permitir a implementação de funções individuais na nuvem que são executadas em resposta a eventos.[12] O FaaS está incluído no termo mais amplo computação sem servidor, mas os termos também podem ser usados ​​de forma intercambiável.[13]
+MBaaS - Mobile "backend" as a Service - ou Backend móvel como Serviço (em português): também conhecido como Backend como um Serviço (BaaS), os desenvolvedores de aplicativos móveis e de aplicativos web são providos com uma maneira de vincular seus aplicativos a serviços de armazenamento em nuvem e computação em nuvem com Interface de programação de aplicações (APIs) expostas às suas aplicações e Kit de desenvolvimento de software personalizado (SDK). Os serviços incluem gerenciamento de usuários, notificações por push, integração com serviços de redes sociais[14], entre outros. Esse é um modelo relativamente recente na computação em nuvem,[15] com a maioria das startups de BaaS datadas de 2011 ou posteriores[16][17][18], mas as tendências indicam que esses serviços estão ganhando tração significativa junto aos consumidores corporativos.[19]
+
+
+Serviços oferecidos
+Os seguintes serviços atualmente são oferecidos por empresas:
+
+Servidor Cloud
+Hospedagem de Sites em Cloud
+Load Balancer em Cloud
+Email em Cloud
+
+Modelo de implantação
+A adoção de sistemas cloud computing dependem das características tecnologicas e do modo como os utilizadores percecionam a utilidade da cloud. Por exemplo se os sistemas cloud forem faceis de usar e se acrescentarem utilidade aos utilizadores finais, estes tendem a usar sistemas cloud [20]. Para auxiliar na decisão do utilizador final na escolha do modelo cloud, o utilizador deverá identificar a adequação da infraestrutura tecnológica, deverá mensurar os custos e o retorno desse investimento, bem como identificar as medidas de controle de integridade de informação, a usabilidade da informação e dos sistemas. Neste contexto, importa ainda identificar as medidas de confiabilidade e segurança e integridade dos sistemas da informação e dos dados.[21] No modelo de implantação,[22] dependemos das necessidades das aplicações que serão implementadas. A restrição ou abertura de acesso depende do processo de negócios, do tipo de informação e do nível de visão desejado. Percebemos que certas organizações não desejam que todos os usuários possam acessar e utilizar determinados recursos no seu ambiente de computação em nuvem. Segue abaixo a divisão dos diferentes tipos de implantação:
+
+Nuvem privada
+As nuvens privadas são aquelas construídas exclusivamente para um único usuário (uma empresa, por exemplo). Diferentemente de um data center privado virtual, a infraestrutura utilizada pertence ao usuário, e, portanto, ele possui total controle sobre como as aplicações são implementadas na nuvem. Uma nuvem privada é, em geral, construída sobre um data center privado.
+
+Segundo Veras, a nuvem privada é uma infraestrutura em nuvem operada exclusivamente para uma única organização, e quase sempre operada pela própria organização ou por terceiros e hospedada interna ou externamente. Realizar um projeto de nuvem privada requer engajamento significativo para virtualizar o ambiente de negócios e exige que a organização reavalie as decisões sobre os recursos existentes. Pode melhorar os negócios, mas cada etapa do projeto levanta questões de segurança que devem ser abordadas para evitar vulnerabilidades sérias.[23]
+
+A hospedagem interna é bastante interessante, quando o controle dos dados é algo muito crítico, nesses casos, hospedar através de algum provedor, não é uma solução interessante, devido a perda do controle do armazenamento das informações.
+
+Nuvem pública
+Uma nuvem é chamada de "nuvem pública" quando os serviços são disponibilizados em uma rede aberta para uso público. Os serviços de nuvem pública podem ser gratuitos.[24] Tecnicamente, pode haver pouca ou nenhuma diferença entre a arquitetura de nuvem pública e privada, entretanto, a consideração de segurança pode ser substancialmente diferente para serviços (aplicativos, armazenamento e outros recursos) disponibilizados por um provedor de serviços para um público público e quando a comunicação é efetuada através de uma rede não confiável. Geralmente, os provedores de serviços de nuvem pública, como o Amazon Web Services (AWS), a Oracle, a Microsoft e o Google, possuem e operam a infraestrutura em seu data center e o acesso é geralmente pela Internet. A AWS, Oracle, Microsoft e Google também oferecem serviços de conexão direta chamados "AWS Direct Connect", "Oracle FastConnect", "Azure ExpressRoute" e "Cloud Interconnect" respectivamente. Essas conexões exigem que os clientes comprem ou concedam uma conexão privada a um ponto de peering oferecido pelo provedor de nuvem.[25][26]
+
+Nuvem híbrida
+Nas nuvens híbridas temos uma composição dos disponibilizados vens públicas e privadas. Elas permitem que uma nuvem privada possa ter seus recursos ados a partir de uma reserva de recursos em uma nuvem pública. Essa característica possui a vantagem de manter os níveis de serviço mesmo que haja flutuações rápidas na necessidade dos recursos. A conexão entre as nuvens pública e privada pode ser usada até mesmo em tarefas periódicas que são mais facilmente implementadas nas nuvens públicas, por exemplo. O termo computação em ondas é, em geral, utilizado quando se refere às nuvens híbridas.
+
+Outros
+Nuvem comunitária
+A nuvem comunitária é de uso exclusivo para específicas comunidades de consumidores de organizações com interesses compartilhados (Requerimentos de segurança, política, considerações de compliance, entre outros). Ela pode ser gerenciada por uma ou mais organizações na comunidade, por terceiros, ou por alguma combinação entre eles, e podem ser hospedadas tanto internamente ou externamente. Seu custo por usuários é maior a Nuvem pública (porém, menor do que na Nuvem privada), então apenas alguns recursos de menor custo da computação em nuvem podem ser aplicados. [27]
+
+Nuvem HPC
+Nuvem HPC se refere ao uso dos serviços e infraestrutura da computação em nuvem para executar aplicações de alta performance (em inglês, High Performance Computing Cloud ou HPC Cloud)[28]. Essas aplicações consomem uma porção considerável de poder de computação e de memória, e são tradicionalmente aglomerados de computadores. Vários vendedores oferecem servidores que suportam a execução dessas aplicações. [29][30][31][32] Em nuvem HPC, o modelo de implantação permite que todos os recursos de HPC estejam dentro da infraestrutura do provedor da nuvem ou em diferentes porções de recursos HPC à serem compartilhados entre o provedor e o cliente no local em que a infraestrutura se encontra. A implementação de nuvem para rodar aplicações de alta performance (HPC applications) começou majoritariamente para aplicações compostas de tarefas independentes, sem inter-process communication (IPC). Conforme os provedores de nuvens começaram a oferecer tecnologias de rede de alta velocidade, como a InfiniBand, aplicações com multiprocessamento totalmente acoplados começaram a se beneficiar dos serviços de nuvem também.
+
+Multicloud
+O Multicloud é o uso de vários serviços de computação em nuvem em uma única arquitetura heterogênea para reduzir a dependência de fornecedores individuais, aumentar a flexibilidade por meio de opções, mitigar desastres etc. Diferencia-se da nuvem híbrida em se referir a vários serviços em nuvem, em vez de várias implantações modos (público, privado, legado). [33][34][35]
+
+Nuvem de BigData
+Os problemas para transferir grandes quantidades de dados para a nuvem, assim como segurança desses dados uma vez que esses dados estão na nuvem inicialmente dificultaram a implementação de nuvem para Big Data, mas agora que muitos dados se originam na nuvem e com o advento dos servidores bare-metal, a nuvem se tornou[36] uma solução para usada para diversos casos, incluindo análise de negócios (business analytics) e análises geoespaciais (geospatial analysis).[37]
+
+Nuvem Distribuída
+Uma plataforma de computação em nuvem pode ser montada por máquinas distribuídas em diferentes locais, conectadas à uma rede ou à um serviço de hub. Existem dois tipos de nuvem distribuída: computação com recursos públicos (public-resource computing) e nuvem voluntária (volunteer cloud).
+
+●     Computação com recursos públicos: Este tipo de nuvem distribuída é resultado de uma extensa definição de computação em nuvem, porque eles são mais semelhantes à nuvem distribuída do que à computação em nuvem. De qualquer forma, esta é considerada uma subclasse da computação em nuvem, e alguns exemplos incluem plataforma distribuídas de computação como: BOINC e Folding@Home.
+
+●     Nuvem voluntária: Esta é caracterizada como a interseção entre nuvem distribuída e computação em nuvem, onde a infraestrutura da computação em nuvem é construída utilizando recursos voluntários. Muitos desafios surgem por conta deste tipo de infraestrutura, por causa da volatilidade dos recursos usados para a construção e por conta do ambiente dinâmico em que opera. Esta também pode ser chamada de nuvens de pessoa para pessoa (peer-to-peer cloud), ou nuvens ad-hoc. A Cloud@Home é uma iniciativa interessante nessa direção, ela tem como objetivo implementar uma infraestrutura de computação em nuvem utilizando recursos voluntários provendo um modelo de negócios que incentiva contribuições através de restituição financeira.[38]
+
+
+
+
+Arquitetura
+Arquitetura de Nuvem
+
+Cloud computing sample architecture
+Arquitetura de nuvem, os sistemas de arquitetura dos sistemas de software envolvidos na entrega da computação em nuvem, tipicamente envolvem múltiplos componentes de nuvem comunicando-se entre si através de um mecanismo de acoplamento solto, como uma fila de mensagens. O fornecimento elástico implica inteligência no uso de acoplamento rígido ou solto aplicado a mecanismos como esses e outros. Um outro desenvolvimento é a Engenharia de nuvem que é a aplicação de padrões de engenharia à computação em nuvem. Essa traz uma abordagem sistemática para as preocupações de alto nível de comercialização, padronização e governança na concepção, desenvolvimento, operação e manutenção de sistemas de computação em nuvem. É um método multidisciplinar que engloba contribuições de diversas áreas, como sistemas, software, web, desempenho, informação, segurança, plataforma, risco e engenharia de qualidade.
+
+
+
+
+
+
+Virtualização [https://imasters.com.br/desenvolvimento/vms-vs-containers-quais-diferencas-e-usos]
+
+Virtualização de servidores
+A virtualização de servidores permite que vários sistemas operacionais sejam executados em um único servidor físico como máquinas virtuais altamente eficientes. Os principais benefícios incluem, Maior eficiência da TI, Redução dos custos operacionais, Mais rapidez na implantação de cargas de trabalho, Melhor desempenho dos aplicativos, Maior disponibilidade do servidor, Eliminação da complexidade e da proliferação de servidores
+
+Virtualização de redes
+Ao reproduzir completamente uma rede física, a virtualização de redes permite que os aplicativos sejam executados em uma rede virtual como se estivessem sendo executados em uma rede física, porém, com mais benefícios operacionais e toda a independência de hardware da virtualização. (A virtualização de redes apresenta serviços e dispositivos lógicos do sistema de redes, ou seja, portas lógicas, switches, roteadores, firewalls, balanceadores de carga, VPNs e outros, para cargas de trabalho conectadas.)
+
+Virtualização de desktops
+A implantação de desktops como um serviço gerenciado permite que as organizações de TI respondam mais rapidamente às novas necessidades do local de trabalho e às oportunidades que surgirem. Os desktops e os aplicativos virtualizados também podem ser fornecidos com rapidez e facilidade a filiais, funcionários externos e terceirizados e trabalhadores móveis, utilizando tablets iPad e Android.
