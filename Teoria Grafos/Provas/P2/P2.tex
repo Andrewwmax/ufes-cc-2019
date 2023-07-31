@@ -1,0 +1,165 @@
+\documentclass[final,3p,12pt]{elsarticle}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-berge}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{lineno}
+\usetikzlibrary{backgrounds}
+
+\journal{Universidade Federal do Espírito Santo}
+
+\begin{document}
+	\begin{frontmatter}
+
+		\title{Teoria dos Grafos \\
+		\large Prova 2 - Shape Aluno}
+
+		\author{André Thiago Borghi Couto\fnref{label2}}
+		\ead{andreww.max@hotmail.com}
+		\ead[url]{github/andrewwmax}
+		\address{São Mateus - ES, Brasil}
+		\fntext[label2]{Estudante de Engenharia da Computação, na Universidade Federal do Espírito Santo no campus Ceunes}
+	\end{frontmatter}
+
+%Primeira seção
+\section{Desenhe um grafo que seja de Euler, mas que não seja hamiltoniano. Explique por que o grafo desenhado não é hamiltoniano.}
+	\label{S:1}
+
+		\begin{figure}[!ht]
+			\centering
+			\begin{tikzpicture}
+				\SetGraphUnit{2}
+				\SetVertexMath
+				\SetUpEdge[lw = 1.0pt]
+				\Vertex{C}
+				\NOWE(C){A}
+				\SOWE(C){B}
+				\NOEA(C){D}
+				\SOEA(C){E}
+
+				\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\Edge[label = $v_1$](A)(B)
+				\Edge[label = $v_2$](B)(C)
+				\Edge[label = $v_3$](C)(D)
+				\Edge[label = $v_4$](D)(E)
+				\Edge[label = $v_5$](E)(C)
+				\Edge[label = $v_6$](C)(A)
+
+			\end{tikzpicture}
+			\caption{Grafo usado na resposta da questão \thesection}
+		\end{figure}
+
+		R: O grafo acima é um grafo de Euler, uma vez que só possui uma componente conexa e o grau de todos os seus vértices é $\geq 2$, claramente possuindo pelo menos um ciclo euleriano. Porém este não é Hamiltoniano, uma vez que qualquer tentativa de caminho fechado que for feito terá que possar pelo vértice c diversas vezes, pelo menos 2 vezes quando não for a origem e pelo menos 3, se for escolhido como vértice de partida. Portanto este não respeita a condição para ser um grafo Hamiltoniano de existir um caminho fechado sem repetição de vértices (exceto o de partida), mas respeita o de grafo Euleriano, existindo pelo menos um tour, que representa um caminho fechado sem repetição de arestas.
+
+\section{Certo ou errado? Para mostrar que dois grafos $G$ e $H$ com mesmo número de vértices não são isomorfos basta exibir uma bijeção $f$ de $V_G$ em $V_H$ e um par de vértices $u$ e $v$ em $V_G$ tal que $(1)$ ${u,v} \in E_G$ mas ${f(u), f(v)} \ni E_H$ ou $(2)$${u,v} \ni E_G$ mas ${f(u), f(v)} \in E_H$. Justifique sua resposta.}
+	\label{S:2}
+
+		R: Errado, estas condições apresentadas apenas descartam o isomorfismo para este mapeamento especifico, nada impede de existir alguma outra bijeção que mantenha todas as adjacências e não adjacências entre os grafos $G$ e $H$, provando que estes são isomorfos. Logo, para conseguir mostrar que não há isomorfismo entre eles, deve se mostrar que não existe nenhum mapeamento entre todos os possíveis, que consiga provar o isomorfismo entre eles.
+
+\section{Prove ou mostre um contra-exemplo: Todo grafo com número de vértices $n \geq 3$ e grau mínimo $\delta(G) \geq 2$ possui um ciclo Hamiltoniano.}
+	\label{S:3}
+
+		R: Falsa, esta condição é necessário para a existência deste ciclo, mas não garante, como segue o contra exemplo abaixo, o qual possui $n = 5 \geq 3$ e $\delta(G) = 2 \geq 2$
+
+		\begin{figure}[!ht]
+			\centering
+			\begin{tikzpicture}
+				\SetGraphUnit{2}
+				\SetVertexMath
+				\SetUpEdge[lw = 1.0pt]
+				\node (a) at (90:2) {$\delta(C) = 4$};
+				\Vertex{C}
+				\node (a) at (150:4) {$\delta(A) = 2$};
+				\NOWE(C){A}
+				\node (b) at (-150:4) {$\delta(B) = 2$};
+				\SOWE(C){B}
+				\node (d) at (30:4) {$\delta(D) = 2$};
+				\NOEA(C){D}
+				\node (e) at (-30:4) {$\delta(E) = 2$};
+				\SOEA(C){E}
+				\node (res) at (-90:3) {$|V| = 5$};
+
+				\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\Edge[label = $v_1$](A)(B)
+				\Edge[label = $v_2$](B)(C)
+				\Edge[label = $v_3$](C)(D)
+				\Edge[label = $v_4$](D)(E)
+				\Edge[label = $v_5$](E)(C)
+				\Edge[label = $v_6$](C)(A)
+
+			\end{tikzpicture}
+			\caption{Grafo usado na resposta da questão \thesection}
+		\end{figure}
+
+\section{Sobre o algoritmo de Ford-Fulkerson, responda os seguintes itens:}
+	\label{S:4}
+		\subsection{Qual é o objetivo do algoritmo?}
+			
+			R: Conseguir o Fluxo máximo em um grafo com restição de volume de fluxo por aresta, de modo que não existam gargalos entre a origem e o sumidouro, ou seja, todos os vértices que não são origem ou sumidouro terão fluxo de entrada igual ao de saída e o máximo possível.
+
+		\subsection{Enumere e descreva cada passo do algoritmo}
+
+			R: 	Primeiro:
+				É passado para o algoritmo um grafo orientado, o fluxo máximo de suas arestas e o fluxo atual (podendo começar em 0).
+
+				Segundo:
+				O algoritmo cria o grafo residual do grafo orientado, invertendo as arestas com o fluxo atual e criando arestas no sentido antigo das arestas invertidas que terão valor igual ao fluxo máximo - fluxo atual.
+
+				Terceiro:
+				Busca a aresta de menor custo no caminho encontrado no grafo residual e adiciona este valor a todas as arestas no caminho, no grafo original, aumentando portanto o fluxo atual destas arestas.
+
+				Quinto:
+				Volta ao passo 2, até não existir mais caminhos aumentantes.
+
+		\subsection{Apresente um exemplo com o passo-a-passo do algoritmo. Seu exemplo deve ter, no mínimo, 7 vértices}
+
+			R:
+			\begin{figure}[!ht]
+				\centering
+				\begin{tikzpicture}[scale=1]
+					\SetVertexMath
+					\SetUpEdge[ lw = 1.5pt,labelcolor = white, 
+								labeltext = black, labelstyle = {text=blue}]
+					\Vertex[x=-8,y=0]	{s}
+					\Vertex[x=-4,y=4]	{v_1}
+					\Vertex[x=-4,y=0]	{v_2}
+					\Vertex[x=-4,y=-4]	{v_3}
+					\Vertex[x=0 ,y=2]	{v_4}
+					\Vertex[x=0 ,y=-2]	{v_5}
+					\Vertex[x=4 ,y=4]	{v_6}
+					\Vertex[x=4 ,y=0]	{v_7}
+					\Vertex[x=4 ,y=-4]	{v_8}
+					\Vertex[x=8 ,y=0]	{t}
+
+					\tikzset{EdgeStyle/.style = {->}}
+					\Edge[label = 8](s)(v_1)
+					\Edge[label = 15](s)(v_2)
+					\Edge[label = 7](s)(v_3)
+					\Edge[label = 5](v_1)(v_2)
+					\Edge[label = 11](v_2)(v_3)
+					\Edge[style={pos=.25},label = 10](v_2)(v_4)
+					\Edge[style={pos=.25},label = 7](v_4)(v_7)
+					\Edge[label = 6](v_5)(v_4)
+					\Edge[label = 10](v_6)(v_7)
+					\Edge[label = 12](v_8)(v_7)
+					\Edge[label = 12](v_4)(v_6)
+					\Edge[label = 12](v_5)(v_8)
+					\Edge[label = 10](v_6)(t)
+					\Edge[label = 10](v_7)(t)
+					\Edge[label = 10](v_8)(t)
+
+					\Edge[style={pos=.25},label = 16](v_7)(v_5)
+					\Edge[style={pos=.25},label = 16](v_1)(v_5)
+					\Edge[style={pos=.25},label = 16](v_5)(v_6)
+					\Edge[style={pos=.25},label = 9](v_4)(v_8)
+					\Edge[style={pos=.25},label = 13](v_2)(v_5)
+					\Edge[style={pos=.25},label = 9](v_3)(v_4)
+
+				\end{tikzpicture}
+			\end{figure}
+
+\end{document}

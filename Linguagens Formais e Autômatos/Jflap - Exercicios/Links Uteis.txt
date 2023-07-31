@@ -1,0 +1,9 @@
+//Remove Recursão a esquerda
+https://cyberzhg.github.io/toolbox/left_rec
+
+//Remove conflito a esquerda ou Fatora
+https://cyberzhg.github.io/toolbox/left_fact
+
+//Testador de Gramatica GLC (Livre de Contexto)
+//em Ingles CFG (Context-Free)
+http://mdaines.github.io/grammophone/

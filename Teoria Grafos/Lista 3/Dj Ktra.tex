@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you give
+% someone the link to this page, they can edit at the same
+% time. See the help menu above for more info. Enjoy!
+%
+% Note: you can export the pdf to see the result at full
+% resolution.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{beamer}
+
+\usepackage{tikz}
+
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+
+
+\begin{document}
+\begin{comment}
+:Title: Prim's algorithm
+:Tags: Beamer, Layers, Foreach, Graphs
+:Use page: 11
+
+
+A step by step example of the `Prim's algorithm`_ for finding the `minimum
+spanning tree`_. Animated using Beamer 
+overlays.
+
+.. _Prim's algorithm: http://en.wikipedia.org/wiki/Prim%27s_algorithm
+.. _Minimum spanning tree: http://en.wikipedia.org/wiki/Minimum_spanning_tree
+
+| Source: Adapted from an example on Wikipedia_
+
+.. _Wikipedia: http://en.wikipedia.org/wiki/Prim%27s_algorithm
+\end{comment}
+
+% Declare layers
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{frame}
+\frametitle{Dijkstra}
+
+%% Adjacency matrix of graph
+%% \  a  b  c  d  e  f  g
+%% a  x  7     5
+%% b  7  x  8  9  7
+%% c     8  x     5
+%% d  5  9     x 15  6
+%% e     7  5 15  x  8  9
+%% f           6  8  x 11
+%% g              9  11 x
+
+\tikzstyle{vertex}=[circle,fill=black!25,minimum size=20pt,inner sep=0pt]
+\tikzstyle{selected vertex} = [vertex, fill=green!24]
+\tikzstyle{next vertex} = [vertex, fill=red!24]
+\tikzstyle{edge} = [draw,thick,-]
+\tikzstyle{weight} = [font=\small]
+\tikzstyle{selected edge} = [draw,line width=5pt,-,red!50]
+\tikzstyle{path edge} = [draw,line width=5pt,-,green!50]
+\tikzstyle{ignored edge} = [draw,line width=5pt,-,black!20]
+
+\begin{figure}
+\begin{tikzpicture}[scale=1, auto,swap]
+    % First we draw the vertices
+    \foreach \pos/\name in {{(2,2)/1}, {(2,-2)/7}, {(4,2)/2},{(0,0)/0}, {(8,0)/4}, {(4,0)/8},{(6,2)/3}, {(4,-2)/6}, {(6,-2)/5}}
+        \node[vertex] (\name) at \pos {$\name$};
+        
+    % Connect vertices with edges and draw weights
+    \foreach \source/ \dest /\weight in { 0/1/4, 1/2/8, 2/3/7, 3/4/9,4/5/10, 5/6/2, 6/7/1, 7/8/7,0/7/8, 0/1/4, 1/7/11, 2/8/2, 8/6/6, 2/5/4, 3/5/14}
+        \path[edge] (\source) -- node[weight] {$\weight$} (\dest);
+    
+    % Start animating the vertex and edge selection. 
+    \foreach \vertex / \fr in { 1/1,7/1,2/2,2/3,8/3,6/3,5/4,4/5,3/5}
+        \path<\fr-> node[next vertex] at (\vertex) {$\vertex$};
+
+    \foreach \vertex / \fr in { 0/1,1/2,7/3,6/4,5/5,2/6,8/7,3/8,4/9}
+        \path<\fr-> node[selected vertex] at (\vertex) {$\vertex$};
+    
+    % For convenience we use a background layer to highlight edges
+    % This way we don't have to worry about the highlighting covering
+    % weight labels. 
+    \begin{pgfonlayer}{background}
+        \pause
+        \foreach \source / \dest / \fr in { 0/7/2, 1/7/2, 1/2/2, 
+                                            1/2/3, 7/8/3, 7/6/3, 
+                                            1/2/4, 6/8/4, 6/5/4, 
+                                            1/2/5, 5/2/5, 5/3/5, 5/4/5, 6/8/5, 6/5/5,
+                                            2/3/6, 2/8/6, 5/2/6, 5/3/6, 5/4/6, 6/8/6,
+                                            2/3/7, 5/3/7, 5/4/7,
+                                            5/4/8, 3/4/8, 3/5/8}
+            \path<\fr>[selected edge] (\source.center) -- (\dest.center);
+
+        \foreach \source / \dest / \fr in {0/1/1, 0/7/3, 7/6/4, 1/2/5, 6/5/6, 2/8/7, 2/3/8, 5/4/9}
+            \path<\fr->[path edge] (\source.center) -- (\dest.center);
+            
+        \foreach \source / \dest / \fr in {1/7/3, 7/8/4, 2/5/6, 6/8/6, 3/5/8, 3/4/9}
+            \path<\fr->[ignored edge] (\source.center) -- (\dest.center);
+            
+    \end{pgfonlayer}
+\end{tikzpicture}
+\end{figure}
+
+\end{frame}
+
+\end{document}

@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section.1}{O grafo completo bipartido Km,n \351 hamiltoniano? Explique.}{}% 1
+\BOOKMARK [1][-]{section.2}{Desenhe um grafo que seja de Euler, mas n\343o hamiltoniano. Explique.}{}% 2
+\BOOKMARK [1][-]{section.3}{Prove ou mostre um contra-exemplo: Todo grafo com n\372mero de v\351rtices n 3 e grau m\355nimo \(G\) 2 possui um ciclo hamiltoniano.}{}% 3
+\BOOKMARK [1][-]{section.4}{Prove que um grafo conexo G \351 um grafo euleriano se e somente se seu conjunto de arestas puder ser decomposto em ciclos.}{}% 4
+\BOOKMARK [1][-]{section.5}{Mostre que o ciclo ebacde \351 uma solu\347\343o para o problema do caixeiro-viajante, para o grafo mostrado a seguir.}{}% 5
+\BOOKMARK [1][-]{section.6}{Resolva o problema do caixeiro-viajante para o grafo a seguir:}{}% 6
+\BOOKMARK [1][-]{section.7}{Resolva o problema do carteiro chin\352s para cada o grafo a seguir:}{}% 7
+\BOOKMARK [1][-]{section.8}{Mostre que, se e for qualquer aresta de K5, ent\343o K5 - e \351 planar.}{}% 8
+\BOOKMARK [1][-]{section.9}{Considere G um grafo plano 4-regular com 10 faces. Determine quantos v\351rtices G tem e desenhe G.}{}% 9
+\BOOKMARK [1][-]{section.10}{Aplique o algoritmo de Ford-Fulkerson no grafo abaixo. Apresente o passo-a-passo e o resultado final. Para cada passo, apresente o grafo residual.}{}% 10

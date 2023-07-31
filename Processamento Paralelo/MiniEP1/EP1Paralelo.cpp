@@ -1,0 +1,118 @@
+// Para compilar use o seguinte comando (no linux):
+// g++ -O3 -std=c++14 -lrt miniEP1.cpp -o miniEP1
+#include <iostream>
+#include <random>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/time.h>
+#include <time.h>
+#include <math.h>
+#include <chrono>
+#include <list>
+#include <numeric>
+#include <iomanip>
+#include <sys/wait.h>
+#include <sys/mman.h>
+#include <sys/types.h>
+
+using namespace std;
+using namespace chrono;
+
+#define duration(a) duration_cast<milliseconds>(a).count()
+#define timeNow() high_resolution_clock::now()
+#define FUNCAO(I) (sqrt(I) + pow(I, I) + log(I))
+
+double *somaGlobal;
+
+double aplicaFuncaoESoma(double *M, int N){
+    double soma = 0.0;
+    
+    for(int i = 0; i < N; i++) soma += FUNCAO(M[i]);
+
+    return soma;
+}
+
+int main(int argc, char *argv[]){
+
+    if (argc != 2) {
+        fprintf(stderr, "usage: ./EP1Paralelo <N>\n");
+        exit(1);
+    }
+
+    int N = atoi(argv[1]);
+
+    //Semente fixa para gerar sempre os mesmos números
+    srand(0);
+
+    //Paralelo
+    auto start_time_total = timeNow();
+    
+    somaGlobal = (double *) mmap(NULL, sizeof(*somaGlobal), PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
+    
+    double *M1 = (double *) calloc(N / 4, sizeof(double));
+    double *M2 = (double *) calloc(N / 4, sizeof(double));
+    double *M3 = (double *) calloc(N / 4, sizeof(double));
+    double *M4 = (double *) calloc(N / 4, sizeof(double));
+
+    //conferindo a soma
+    // cout << (FUNCAO(1));
+    
+    for (int i = 0; i < N / 4; ++i){
+        // printf("%d, %d, %d, %d\n", i, i + id, i + N / 2, i + (N - id));
+        M1[i] = (0.1 + (rand() % 10000) / 10000.0);
+        M2[i] = (0.1 + (rand() % 10000) / 10000.0);
+        M3[i] = (0.1 + (rand() % 10000) / 10000.0);
+        M4[i] = (0.1 + (rand() % 10000) / 10000.0);
+
+        //conferindo a soma
+        // M1[i] = 1;
+        // M2[i] = 1;
+        // M3[i] = 1;
+        // M4[i] = 1;
+    }
+
+    pid_t parentPid;
+    parentPid = fork();
+    
+    if(parentPid == 0) {
+
+        *somaGlobal += aplicaFuncaoESoma(M1, N / 4);
+        // cout << "\nTempo 1: " << duration(end_time - start_time_total) / 1000.f << " ms\n" << flush;
+        
+        pid_t childPid = fork();
+        if(childPid == 0){
+            *somaGlobal += aplicaFuncaoESoma(M2, N / 4);
+            // munmap(somaGlobal, sizeof *somaGlobal);
+            // cout << "\nTempo 2: " << duration(end_time - start_time_total) / 1000.f << " ms\n" << flush;
+            return 0;
+
+        } else if(childPid > 0){
+            wait(NULL);
+            *somaGlobal += aplicaFuncaoESoma(M3, N / 4);
+            // cout << "\nTempo 3: " << duration(end_time - start_time_total) / 1000.f << " ms\n" << flush;
+            // return 0;
+            
+        } else perror("childPid");
+
+    } else if (parentPid > 0){
+        *somaGlobal += aplicaFuncaoESoma(M4, N / 4);
+        // cout << "\nTempo 4: " << duration(end_time - start_time_total) / 1000.f << " ms\n" << flush;
+        wait(NULL);
+        return 0;
+    } else perror("parentPid");
+
+
+    cout << fixed << setprecision(4);
+    auto end_time_total = timeNow();
+
+    // cout << "Otimizado Paralelis";
+    
+    // cout << *somaGlobal << endl;
+    cout << duration(end_time_total - start_time_total) / 1000.f << flush;
+    // cout << "\nSoma: " << *somaGlobal;
+    // cout << "\nTempo Total: " << duration(end_time_total - start_time_total) / 1000.f << " ms\n" << flush;
+    // wait(NULL);
+
+    return 0;
+}

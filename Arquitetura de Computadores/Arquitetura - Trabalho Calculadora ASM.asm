@@ -1,6 +1,7 @@
 .data
+	#Download do M.A.R.S 'http://courses.missouristate.edu/kenvollmar/mars/'
 	#Para Entrada
-	printTitle: .asciiz "***** CASIO  S3.x *****\n"
+	printTitle: .asciiz "***** CASIO  S.x *****\n"
 	printExp1: .asciiz "Entre com o Primeiro Numero: "
 	printExp2: .asciiz "Entre com o Segundo Numero: "
 	

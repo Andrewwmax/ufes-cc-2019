@@ -1,0 +1,90 @@
+
+O Processador 27 achou a Resposta
+12345 : 8cb2237d0679ca88db6464eac60da96345513964
+
+O Processador 15 achou a Resposta
+DCEL : b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+
+O Processador 14 achou a Resposta
+12345 : 8cb2237d0679ca88db6464eac60da96345513964
+
+O Processador 27 achou a Resposta
+12345 : 8cb2237d0679ca88db6464eac60da96345513964
+
+O Processador 14 achou a Resposta
+A1B2C : 7b151de317f2547df39e1a1ff2850a6abfa6128f
+
+O Processador 27 achou a Resposta
+123ZZ : 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+
+O Processador 15 achou a Resposta
+DCEL : b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+
+O Processador 7 achou a Resposta
+A1B2C : 7b151de317f2547df39e1a1ff2850a6abfa6128f
+
+O Processador 7 achou a Resposta
+12345 : 8cb2237d0679ca88db6464eac60da96345513964
+
+O Processador 14 achou a Resposta
+123ZZ : 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+
+O Processador 8 achou a Resposta
+DCEL : b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+
+O Processador 31 achou a Resposta
+99999 : a045b7efa463c6ed195c644163f4168952fbd34a
+
+O Processador 4 achou a Resposta
+A1B2C : 7b151de317f2547df39e1a1ff2850a6abfa6128f
+
+O Processador 15 achou a Resposta
+99999 : a045b7efa463c6ed195c644163f4168952fbd34a
+
+O Processador 7 achou a Resposta
+123ZZ : 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+
+O Processador 4 achou a Resposta
+DCEL : b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+
+O Processador 7 achou a Resposta
+99999 : a045b7efa463c6ed195c644163f4168952fbd34a
+
+O Processador 1 achou a RESPOSTA
+a : 86f7e437faa5a7fce15d1ddcb9eaeaea377667b8
+
+O Processador 1 achou a RESPOSTA
+a : 86f7e437faa5a7fce15d1ddcb9eaeaea377667b8
+
+O Processador 1 achou a RESPOSTA
+zz : d7dacae2c968388960bf8970080a980ed5c5dcb7
+
+O Processador 1 achou a RESPOSTA
+zz : d7dacae2c968388960bf8970080a980ed5c5dcb7
+
+O Processador 1 achou a RESPOSTA
+aaaa : 70c881d4a26984ddce795f6f71817c9cf4480e79
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3

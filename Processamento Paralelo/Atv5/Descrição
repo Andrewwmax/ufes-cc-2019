@@ -1,0 +1,7 @@
+Processamento Paralelo - Atividade 5 - Threads
+
+André Thiago Borghi Couto - 2016103024
+
+Descrição da máquina:
+	Os códigos foram implementados em C++ e compilados com GNU gcc versão 7.3.0 de dois modos, com a opção -O3 ativada e sem essa opção para efeitos de comparação.
+	Os experimentos foram realizados em uma máquina Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz, com os caches de: L1d - 32K, L1i - 32K, L2 - 256K, L3 - 4096K. Tendo 8 GB de memória RAM e com S.O. Linux Mint 19.

@@ -1,0 +1,238 @@
+\documentclass[final,3p,12pt]{elsarticle}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-berge}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\usepackage{lineno}
+\usetikzlibrary{backgrounds}
+
+\journal{Universidade Federal do Espírito Santo}
+
+\begin{document}
+	\begin{frontmatter}
+
+		\title{Teoria dos Grafos \\
+		\large Prova 1 - Shape Aluno}
+
+		\author{André Thiago Borghi Couto\fnref{label2}}
+		\ead{andreww.max@hotmail.com}
+		\ead[url]{github/andrewwmax}
+		\address{São Mateus - ES, Brasil}
+		\fntext[label2]{Estudante de Engenharia da Computação, na Universidade Federal do Espírito Santo no campus Ceunes}
+	\end{frontmatter}
+
+%EXEMPLOS
+	% \begin{itemize}
+	% 	\item Bullet point one
+	% \end{itemize}
+
+	% \begin{enumerate}
+	% 	\item Numbered list item one
+	% \end{enumerate}
+
+	% \begin{table}[ht]
+	% 	\centering
+	% 	\begin{tabular}{l l l}
+	% 		\hline
+	% 		\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+	% 		\hline
+	% 		Treatment 1 & 0.0003262 & 0.562 \\
+	% 		Treatment 2 & 0.0015681 & 0.910 \\
+	% 		Treatment 3 & 0.0009271 & 0.296 \\
+	% 		\hline
+	% 	\end{tabular}
+	% 	\caption{Table caption}
+	% \end{table}
+
+	% \begin{figure}[ht]
+	% 	\centering
+	% 	\includegraphics[width=0.4
+	% 	\linewidth]{a.png}
+	% 	\caption{Figure caption}
+	% \end{figure}
+
+	% \begin{equation}
+	% 	\label{eq:emc}
+	% 	e = mc^2
+	% \end{equation}
+
+%Primeira seção
+\section{Seja $G$ um grafo, $T$ uma Arvore geradora de $G$ e $v \in V(G)$.}
+	\label{S:1}
+	\subsection{E verdade que se $v$ tem grau maior que 1 em $T$, entao $v$ é vértice de corte em $G$? Justifique.}
+		R: Não, pode haver outro caminho que liga o acestral de v a seus decendentes, como segue no contra exemplo.
+		Apesar do vértice ter grau $2 > 1$ em $T$ este não é vertice de corte em $G$, uma vez que o grafo $G - v$ não possui mais componentes conexas que $G$
+		\begin{figure}[!ht]
+			\centering
+			\begin{tikzpicture}
+				\SetGraphUnit{2}
+				\SetVertexMath
+				\SetUpEdge[lw = 1.0pt]
+				\Vertex{C}
+				\NOWE(C){A}
+				\SOWE(C){B}
+				\NOEA(C){D}
+				\SOEA(C){E}
+
+				\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\Edge[label = $v_1$](A)(B)
+				\Edge[label = $v_2$](A)(D)
+				\Edge[label = $v_3$](A)(C)
+				\Edge[label = $v_5$](B)(E)
+				\Edge[label = $v_4$](D)(E)
+				\Edge[label = $v_6$](E)(C)
+
+			\end{tikzpicture}
+			\begin{tikzpicture}
+				\SetGraphUnit{2}
+				\SetVertexMath
+				\SetUpEdge[lw = 1.0pt]
+				\Vertex{C}
+				\NOWE(C){A}
+				\SOWE(C){B}
+				\NOEA(C){D}
+				\SOEA(C){E}
+
+				\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\Edge[label = $v_1$](A)(B)
+				\Edge[label = $v_2$](A)(D)
+				\Edge[label = $v_3$](A)(C)
+				\Edge[label = $v_6$](E)(C)
+
+			\end{tikzpicture}
+			\caption{Grafos usados na resposta da questão \thesection}
+		\end{figure}
+
+	\subsection{E verdade que se $v$ é vértice de corte em $G$ então $v$ tem grau maior que 1 em $T$? Justifique.} 
+		
+		R: Sim, como $v$ é um vértice de corte em $G$, isto significa que existe um ou mais vértices que apenas são alcançáveis em $G$ a partir de $v$. Logo uma árvore geradora $T$ não poderá ter $v$, com grau 1 (folha), pois caso isto ocorra ou se existir algum vértice $u$ em $G$ que não está em $T$, e portanto $T$ não seria uma árvore geradora de $G$, ou existir algum outro caminho em $G$ que liga um ancestral de $v$ a algum descendente $u$. Em ambos os casos teríamos um absurdo, uma vez que $T$ é uma árvore geradora de $G$ e $v$ é vértice de corte em $G$.
+
+	\subsection{Um vértice de corte em um grafo pode ser folha de uma árvore geradora deste grafo? Justifique.}
+	
+		R: Não, como visto no item anterior (b), isto não seria possível, uma vez que em árvores $T$ todas as folhas tem grau 1 e como visto que para uma árvore geradora $T$ de $G$, vértices de corte de $G$ não podem ser folhas de $T$, segue um contra exemplo para complementar.
+		Em nenhuma delas $v$ possui $grau = 1$ ou seja, $v$ não é folha em nenhuma das árvores geradoras.
+		\begin{figure}[!ht]
+			\centering
+			\begin{tikzpicture}[scale=0.7]
+				\SetGraphUnit{2}
+				\SetVertexMath
+				\SetUpEdge[lw = 1.0pt]
+				\Vertex{v}
+				\NOWE(v){A}
+				\SOWE(v){C}
+				\NOEA(v){B}
+
+				\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\Edge(A)(v)
+				\Edge(A)(B)
+				\Edge(B)(v)
+				\Edge(C)(v)
+
+				\begin{pgfonlayer}{background}
+					\draw (0,0) node[rounded corners, minimum height=4cm,minimum width=4cm, fill=red!30, label=left:G]{};
+					\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\end{pgfonlayer}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=.5]
+				\SetGraphUnit{2}
+				\SetVertexMath
+				\SetUpEdge[lw = 1.0pt]
+				\Vertex{v}
+				\SOWE(v){B}
+				\SOEA(v){C}
+				\SOWE(B){A}
+
+				\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\Edge(v)(B)
+				\Edge(v)(C)
+				\Edge(A)(B)
+			\end{tikzpicture}
+
+			\begin{tikzpicture}[scale=.5]
+				\SetGraphUnit{2}
+				\SetVertexMath
+				\SetUpEdge[lw = 1.0pt]
+				\Vertex{v}
+				\SOWE(v){A}
+				\SOEA(v){C}
+				\SOWE(A){B}
+
+				\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\Edge(v)(A)
+				\Edge(v)(C)
+				\Edge(B)(A)
+
+			\end{tikzpicture}
+
+			\begin{tikzpicture}
+				\SetVertexMath
+				\SetUpEdge[lw = 1.0pt]
+				\Vertex{v}
+				\SOEA(v){C}
+				\SO(v){B}
+				\SOWE(v){A}
+
+				\tikzset{EdgeStyle/.append style = {bend left = 0}}
+				\Edge(v)(B)
+				\Edge(v)(C)
+				\Edge(v)(A)
+			\end{tikzpicture}
+
+			\caption{Grafos usados na resposta da questão \thesection}
+		\end{figure}
+
+\section{Seja $\Delta(T)$ o maior grau de vértice de uma árvore $T$. Prove que toda arvore $T$ tem (pelo menos) $\Delta(T)$ folhas.}
+	\label{S:2}
+	Dado uma árvore $T$ de $n$ vértices e seja $v$ o vértice de maior grau de $T$, isto indica que existem $\Delta(T)$ arestas que incidem sobre $v$ e também sobre outros $u_i$ vértices, para $i$ variando de $T$ a $\Delta(T)$, cada um destes vértices $u_i$ deverão fazer parte de pelo menos um caminho que leve de $v$ até uma folha distinta, sendo no mínimo $\Delta(T)$ folhas;
+	Suponha que a árvore $T$ não possua menos de $\Delta(T)$ folhas, isto indica que um dado $u_i$ e $u_j$ levam a mesma folha $f$, o que só seria possível caso exista mais de um caminho entre $v$ e $f$, um passando por $u_i$ e outro por $u_j$ (que são adjacentes a $v$) e portanto um ciclo. O que é um absurdo uma vez que $T$ é uma árvore. Logo o número de folhas em $T$ deve ser de no mínimo $\Delta(T)$
+
+\section{Sobre o algoritmo de Prim, responda:}
+	\label{S:3}
+	
+	\subsection{Qual é o objetivo do algoritmo?}
+		
+		R: O algoritmo de Prim recebe um grafo conexo de G e retorna uma árvore geradora de G que possua o valor mínimo para o somatório de custo de suas arestas.
+	
+	\subsection{Enumere os passos do algoritmo.}
+
+		R: 	Primeiro:
+			Recebe os parâmetros, grafo $G(V,E)$, custo das arestas $w$ e raiz $r$;
+
+			Segundo:
+			Cria e inicializa o vetor de distâncias $d$, que tem tamanho $v$ e valores iniciais infinito e o vetor $\pi$ de predecessores, também de tamanho $v$ e valores iniciais nulos;
+
+			Terceiro:
+			Modifica o valor de $r$ no vetor $d$ para 0;
+
+			Quarto:
+			Inicializa um veotr $Q$ com os vértices de G, V;
+
+			Quinto:
+			Verifica se o vetor $Q$ é vazio, se sim vai para o passo 6, caso contrario vai para o passo 9;
+			
+			Sexto:
+			Extrai o vértice $v$ de $Q$, que possui menos valor em $d$
+
+			Sétimo:
+			Para cada $u$ adjacente de $v$ em $G$, verifica se o custo da aresta $(v,u)$ que é dada por $w$ é menor que o valor que está em $d[u]$. Exceto o passo 8 para todos os $(v,u)$ satisfazem a condição e depois retorna ao passo 5;
+
+			Oitavo:
+			Troca o valor em $d[u]$ pelo valor dado por $W(v,u)$;
+
+			Nono:
+			Fim do algoritmo, a árvore de custo total mínimo pode ser montada utilizando os valores no vetor de predecessores $\pi$ e os custos são dados pelo vetor $d$.
+
+\section{Prove que se $T$ é a arborescéncia resultante de uma busca em largura a partir do vértice $r$ em um grafo conexo $G$, então o caminho de $r$ a $v$ em $T$ é um caminho mínimo em $G$ para todo $v \in V(G)$.}
+	\label{S:4}
+		Dado um grafo conexo $G(V,E)$ e $T$ árvore resultante de uma busca em largura em $G$ o caminho da raiz $r$ de $T$ a qualquer vértice $v$ de $T$ será mínimo, ou seja, conterá o menor número de vértices possíveis, devido ao processo de percurso em largura, onde partindo do vértice $r$ e utilizando uma fila para auxiliar, este colocará todos os vértices $u_i$, para $i$ variando de $1$ ao número de adjacentes de $r$ na fila atraz de $r$, adicionando as $i$ arestas $(r,u_i)$ a árvore resultante $T$ que era inicialmente vazia e assim removendo da fila, repetindo este processo para os primeiros vértices da fila e nunca adiccionado um vértice $u$ a fila que já exista em $T$, e nenhuma aresta em $T$ que ligue um par de vértices já presente em $T$. Obteremos, quando a fila estiver vazia, a árvore que possui o menor caminho entre $r$ e um $v$ qualquer, uma vez que para todos os vértices de $T$, partindo de $r$, apenas quando estes vértices eram totalmente explorados é que eram retirados da fila.
+		Suponha que para um $T$ resultante deste processo o caminho de $rTv$ para um $v$ qualquer não seja o número, então deve existor um caminho $rTu$ + $uTv$ que seja menor que $rTv$, porém nesnte caso $u$ teria sido explorado antes de $v$, aparecendo em sua frente nafila e teria seus caminhos adicionados primeiramente a $T$, portanto não ocorria. Ou existe um caminho de $u$ a $v$ em $G$ que não foi considerado pelo algoritmo, o que é um absurdo uma vez que este explora totalmente cada vértice que esta na fila. Logo $rTv$ é o caminho mínimo de $r$ a um vértice qualquer de $G$.
+
+
+
+\end{document}

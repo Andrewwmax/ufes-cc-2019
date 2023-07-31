@@ -1,0 +1,75 @@
+
+mpirun -np 32 -quiet EP2 8cb2237d0679ca88db6464eac60da96345513964
+	12345 : 8cb2237d0679ca88db6464eac60da96345513964
+	Tempo de Execução: 4:24.11
+	Memória usada: 22224
+
+mpirun -np 32 -quiet EP2 7b151de317f2547df39e1a1ff2850a6abfa6128f
+	A1B2C : 7b151de317f2547df39e1a1ff2850a6abfa6128f
+	Tempo de Execução: 2:01.17
+	Memória usada: 22256
+
+mpirun -np 32 -quiet EP2 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+	123ZZ : 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+	Tempo de Execução: 4:43.28
+	Memória usada: 22240
+
+mpirun -np 32 -quiet EP2 b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+	DCEL : b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+	Tempo de Execução: 0:03.58
+	Memória usada: 22608
+
+mpirun -np 32 -quiet EP2 a045b7efa463c6ed195c644163f4168952fbd34a
+	99999 : a045b7efa463c6ed195c644163f4168952fbd34a
+	Tempo de Execução: 4:31.50
+	Memória usada: 22224
+
+mpirun -np 16 -quiet EP2 8cb2237d0679ca88db6464eac60da96345513964
+	12345 : 8cb2237d0679ca88db6464eac60da96345513964
+	Tempo de Execução: 4:25.12
+	Memória usada: 21808
+
+mpirun -np 16 -quiet EP2 7b151de317f2547df39e1a1ff2850a6abfa6128f
+	A1B2C : 7b151de317f2547df39e1a1ff2850a6abfa6128f
+	Tempo de Execução: 6:53.01
+	Memória usada: 21824
+
+mpirun -np 16 -quiet EP2 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+	123ZZ : 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+	Tempo de Execução: 4:21.77
+	Memória usada: 21808
+
+mpirun -np 16 -quiet EP2 b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+	DCEL : b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+	Tempo de Execução: 0:05.51
+	Memória usada: 21808
+
+mpirun -np 16 -quiet EP2 a045b7efa463c6ed195c644163f4168952fbd34a
+	99999 : a045b7efa463c6ed195c644163f4168952fbd34a
+	Tempo de Execução: 11:48.76
+	Memória usada: 21776
+
+mpirun -np 8 -quiet EP2 8cb2237d0679ca88db6464eac60da96345513964
+	12345 : 8cb2237d0679ca88db6464eac60da96345513964
+	Tempo de Execução: 13:04.24
+	Memória usada: 21568
+
+mpirun -np 8 -quiet EP2 7b151de317f2547df39e1a1ff2850a6abfa6128f
+	A1B2C : 7b151de317f2547df39e1a1ff2850a6abfa6128f
+	Tempo de Execução: 6:16.64
+	Memória usada: 21552
+
+mpirun -np 8 -quiet EP2 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+	123ZZ : 230cdfcdb6f2aa33b7acf19edaae5a216a14155f
+	Tempo de Execução: 10:16.92
+	Memória usada: 21536
+
+mpirun -np 8 -quiet EP2 b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+	DCEL : b2cdbf0601d8ae90d3cda1c978566ace86c4eac0
+	Tempo de Execução: 0:08.39
+	Memória usada: 21552
+
+mpirun -np 8 -quiet EP2 a045b7efa463c6ed195c644163f4168952fbd34a
+	99999 : a045b7efa463c6ed195c644163f4168952fbd34a
+	Tempo de Execução: 21:10.85
+	Memória usada: 21520

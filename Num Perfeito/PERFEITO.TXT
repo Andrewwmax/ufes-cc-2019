@@ -1,0 +1,8 @@
+Eh Perfeito: 6
+Eh Perfeito: 28
+Eh Perfeito: 496
+Eh Perfeito: 8128
+Eh Perfeito: 33550336
+Eh Perfeito: 8589869056
+Eh Perfeito: 137438691328
+Eh Perfeito: 2305843008139952128

@@ -1,0 +1,70 @@
+graph G{
+	//subgraph cluster12 { 
+		node[shape=circle];
+		edge [penwidth=2.5];
+		a -- i [style=dotted];
+		f -- d [style=dotted];
+		g -- e [style=dotted];
+		j -- e [style=dotted];
+		subgraph cluster11 { 
+			node[shape=circle];
+			g -- j
+			label = "11"; 
+			color=black
+			subgraph cluster10 { 
+				node[shape=circle];
+				d -- c
+				label = "10"; 
+				color=black
+				subgraph cluster9 { 
+					node[shape=circle];
+					g -- d
+					label = "9"; 
+					color=black
+					subgraph cluster8 { 
+						node[shape=circle];
+						b -- g
+						label = "8"; 
+						color=black
+						subgraph cluster7 { 
+							node[shape=circle];
+							f -- b
+							label = "7"; 
+							color=black
+							subgraph cluster5 { 
+								node[shape=circle];
+								e -- f
+								label = "5"; 
+								color=black
+								subgraph cluster4 { 
+									node[shape=circle];
+									h -- e
+									label = "4"; 
+									color=black
+									subgraph cluster3 { 
+										node[shape=circle];
+										h -- i
+										label = "3"; 
+										color=black
+										subgraph cluster2 { 
+											node[shape=circle];
+											a -- h
+											label = "2"; 
+											color=black
+											subgraph cluster1 { 
+												node[shape=circle];
+												a
+												label = "1"; 
+												color=black
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	//}
+}

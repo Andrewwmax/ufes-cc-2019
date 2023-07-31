@@ -1,0 +1,167 @@
+LINGUAGEM: PASCAL
+
+
+- Lista de Tokens -
+
+LETRAS: (A|a|...|Z|z)
+
+DÍGITOS: (0|...|9)
+
+ALFA = (LETRAS|DÍGITOS|(_))  
+
+<VAR> = (LETRA|(_))(ALFA)*
+
+<NUM> = (DÍGITOS)*(.)?(DÍGITOS)+
+
+COMANDOS:
+
+<BEGIN> = (B|b)(E|e)(G|g)(I|i)(N|n)
+
+<END> = (E|e)(N|n)(D|d)
+
+<WHILE> = (W|h)(H|h)(I|i)(L|l)(E|e)
+
+<REPEAT> = (R|r)(E|e)(P|p)(E|e)(A|a)(T/t)
+
+<UNTIL> = (U|u)(N|n)(T|t)(I|i)(L|l)
+
+<FOR> = (F|f)(O|o)(R|r)
+
+<TO> = (T|t)(O|o)
+
+<DO> = (D|d)(O|o)
+
+<DOWNTO> = (D|d)(O|o)(W|w)(N|n)(T|t)(O|o)
+
+<IF> = (I|i)(F|f)
+
+<THEN> = (T|t)(H|h)(E|e)(N|n)
+
+OPERADORES:
+
+<PT_VIRG>: ;
+
+<DOIS_PTS>: :
+
+<ATRIB>: :=
+
+<AP>: (
+
+<FP>: )
+
+<OP_UN_BIN_ARIT>: (+|-) 
+
+<OP_BIN_MULT>: (*|/)
+
+<OP_BIN_REL>: (<|>|=|<=|>=|<>)
+
+<OP_UN_LOG> = (N|n)(O|o)(T|t)
+
+<OP_BIN_LOG> = ((A|a)(N|n)(D|d))|((O|o)(R|r))
+
+
+
+- Gramática Livre de Contexto -
+
+(ainda com conflitos e recursividade à esquerda)
+
+programa -> comando programa | comando
+
+comando -> if_then
+
+	 | for_to_do
+
+	 | for_downto_do
+
+	 | while_do
+
+         | repeat_until
+
+         | atribuicao <PT_VIRG>
+
+exp -> exp operador1 exp
+
+     | operador2 exp
+
+     | <AP> exp <FP>
+
+     | <VAR>
+
+     | <NUM>
+
+operador1 -> <OP_UN_BIN>
+
+           | <OP_REL>
+
+           | <OP_BIN>
+
+operador2 -> <OP_UN_BIN>
+
+           | <OP_UN>    
+
+if_then -> <IF><AP> exp <FP><THEN> bloco
+
+bloco -> <BEGIN> programa <END> | comando
+
+for_to_do -> <FOR><VAR><ATRIB> exp <TO> exp <DO> bloco
+
+while_do -> <WHILE><AP> exp <OP_REL> exp <FP><DO> bloco
+
+atribuicao -> <VAR><ATRIB> exp
+
+
+repeat_until -> <REPEAT> programa <UNTIL><AP> exp <OP_REL> exp <FP> 
+
+
+
+- Gramática Livre de Contexto -
+
+(sem conflitos, ambiguidade e recursividade à esquerda)
+
+programa -> comando prog
+
+prog -> programa | ?
+
+comando -> if_then
+
+	 | for_to_do
+
+	 | for_downto_do
+
+	 | while_do
+
+         | repeat_until
+
+         | atribuicao <PT_VIRG>
+
+exp -> operador2 exp aux
+
+     | <AP> exp <FP> aux
+
+     | <VAR> aux
+
+     | <NUM> aux
+
+aux -> operador1 exp aux | ?
+
+operador1 -> <OP_UN_BIN>
+
+           | <OP_REL>
+
+           | <OP_BIN>
+
+operador2 -> <OP_UN_BIN>
+
+           | <OP_UN>     
+
+if_then -> <IF><AP> exp <FP><THEN> bloco
+
+bloco -> <BEGIN> programa <END> | comando
+
+for_to_do -> <FOR><VAR><ATRIB> exp <TO> exp <DO> bloco
+
+while_do -> <WHILE><AP> exp <OP_REL> exp <FP><DO> bloco
+
+atribuicao -> <VAR><ATRIB> exp
+
+repeat_until -> <REPEAT> programa <UNTIL><AP> exp <OP_REL> exp <FP>

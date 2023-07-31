@@ -1,0 +1,9 @@
+
+O Processador 1 achou a RESPOSTA
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+Command exited with non-zero status 1
+mpirun -np 2 -quiet EP2 e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+	Tempo de Execução: 10.25
+	Memória usada: 24012
+	CPU usada: 196%
+

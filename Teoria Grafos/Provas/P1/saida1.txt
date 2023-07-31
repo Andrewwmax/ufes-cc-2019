@@ -1,0 +1,25 @@
+Passos:
+
+1. Inicialize todos os vértices v \in V com d[v] = \infinity e x[u] = 2; ‘
+. Faga: dir] - 0;e Qe V:
+3. Enquanto Q # @:
+
+i)
+
+3.1 Extrair de Q o vértice de menor valor de d{v];
+
+3.2 Para cada vértice u na adjacéncia de v que ainda nao foi inserido na AGM parcial, faga a
+relaxagao. Ou seja, atualize seus valores de d[u] e 7[u] de forma a minimizar os valores de du}.
+
+a
+(3,0 pontos) Prove que se T é a arborescéncia resultante de uma busca em largura a partir do vértice r
+em um grafo conexo G, entao o caminho de ra v em T é um caminho minimo em G para todo v € V(G).
+
+Resposta: A prova deve conter: ;
+
+e A utilizacdo.da fila na busca em largura e como isso influencia na insergad dos vértices na drvore de
+largura.
+
+¢ Justificativa de por que o nimero de arestas da raiz r da drvore até qualquer vértice v na arvore de
+largura é igual ao ntimero de arestas do metor caminho de r av, :
+

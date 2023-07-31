@@ -1,0 +1,426 @@
+O Processador 4 achou a Resposta
+m : 6b0d31c0d563223024da45691584643ac78c96e8
+mpirun -np 16 -quiet EP2 6b0d31c0d563223024da45691584643ac78c96e8
+	Tempo de Execução: 1.10
+	Memória usada: 21856
+	CPU usada: 23%
+
+O Processador 7 achou a Resposta
+z : 395df8f7c51f007019cb30201c49e884b46b92fa
+mpirun -np 16 -quiet EP2 395df8f7c51f007019cb30201c49e884b46b92fa
+	Tempo de Execução: 1.10
+	Memória usada: 21856
+	CPU usada: 23%
+
+O Processador 10 achou a Resposta
+M : c63ae6dd4fc9f9dda66970e827d13f7c73fe841c
+mpirun -np 16 -quiet EP2 c63ae6dd4fc9f9dda66970e827d13f7c73fe841c
+	Tempo de Execução: 1.10
+	Memória usada: 21824
+	CPU usada: 23%
+
+	CPU usada: 83%
+
+mpirun -np 16 -quiet EP2 d308e0b2d36c5d2420869c6bf112e31e8d5b0d52
+	Tempo de Execução: 1.12
+	Memória usada: 21856
+	CPU usada: 36%
+
+O Processador 14 achou a Resposta
+00 : fb96549631c835eb239cd614cc6b5cb7d295121a
+mpirun -np 16 -quiet EP2 fb96549631c835eb239cd614cc6b5cb7d295121a
+	Tempo de Execução: 1.12
+	Memória usada: 21856
+	CPU usada: 42%
+
+O Processador 15 achou a Resposta
+99 : 9a79be611e0267e1d943da0737c6c51be67865a0
+mpirun -np 16 -quiet EP2 9a79be611e0267e1d943da0737c6c51be67865a0
+	Tempo de Execução: 1.11
+	Memória usada: 21840
+	CPU usada: 26%
+
+O Processador 1 achou a Resposta
+aaa : 7e240de74fb1ed08fa08d38063f6a6a91462a815
+mpirun -np 16 -quiet EP2 7e240de74fb1ed08fa08d38063f6a6a91462a815
+	Tempo de Execução: 1.12
+	Memória usada: 21856
+	CPU usada: 35%
+
+O Processador 7 achou a Resposta
+zzz : 40fa37ec00c761c7dbb6ebdee6d4a260b922f5f4
+mpirun -np 16 -quiet EP2 40fa37ec00c761c7dbb6ebdee6d4a260b922f5f4
+	Tempo de Execução: 1.14
+	Memória usada: 21840
+	CPU usada: 66%
+
+	CPU usada: 450%
+
+mpirun -np 16 -quiet EP2 7c2fa47687b3791bc61bbe6933fabab1d786a9b4
+	Tempo de Execução: 1.17
+	Memória usada: 21840
+	CPU usada: 87%
+
+O Processador 7 achou a Resposta
+AAA : 606ec6e9bd8a8ff2ad14e5fade3f264471e82251
+mpirun -np 16 -quiet EP2 606ec6e9bd8a8ff2ad14e5fade3f264471e82251
+	Tempo de Execução: 1.16
+	Memória usada: 21872
+	CPU usada: 91%
+
+O Processador 10 achou a Resposta
+MMM : 251f18d4e6b31f7e8ee5bbc62db713101e85a8c9
+mpirun -np 16 -quiet EP2 251f18d4e6b31f7e8ee5bbc62db713101e85a8c9
+	Tempo de Execução: 1.18
+	Memória usada: 21856
+	CPU usada: 95%
+
+O Processador 13 achou a Resposta
+ZZZ : 116ff222a3b49b63348d7782e4b43ffe2dcbb198
+mpirun -np 16 -quiet EP2 116ff222a3b49b63348d7782e4b43ffe2dcbb198
+	Tempo de Execução: 1.21
+	Memória usada: 21808
+	CPU usada: 127%
+
+O Processador 14 achou a Resposta
+000 : 8aefb06c426e07a0a671a1e2488b4858d694a730
+mpirun -np 16 -quiet EP2 8aefb06c426e07a0a671a1e2488b4858d694a730
+	Tempo de Execução: 1.13
+	Memória usada: 21840
+	CPU usada: 47%
+
+	CPU usada: 670%
+
+mpirun -np 16 -quiet EP2 afc97ea131fd7e2695a98ef34013608f97f34e1d
+	Tempo de Execução: 1.19
+	Memória usada: 21856
+	CPU usada: 104%
+
+O Processador 2 achou a Resposta
+etc : 6b942e2831f972c22e2b0292ea3a8176ab41cd3b
+mpirun -np 16 -quiet EP2 6b942e2831f972c22e2b0292ea3a8176ab41cd3b
+	Tempo de Execução: 1.12
+	Memória usada: 21888
+	CPU usada: 36%
+
+O Processador 11 achou a Resposta
+Red : cc9db3a795571c7e71f45670a1da7ff49b5f1557
+mpirun -np 16 -quiet EP2 cc9db3a795571c7e71f45670a1da7ff49b5f1557
+	Tempo de Execução: 1.19
+	Memória usada: 21856
+	CPU usada: 104%
+
+	CPU usada: 553%
+
+mpirun -np 16 -quiet EP2 70c881d4a26984ddce795f6f71817c9cf4480e79
+	Tempo de Execução: 1.21
+	Memória usada: 21856
+	CPU usada: 136%
+
+O Processador 4 achou a Resposta
+mmmm : 1efcfaab69361232b5e5e39265464be84f6e484f
+mpirun -np 16 -quiet EP2 1efcfaab69361232b5e5e39265464be84f6e484f
+	Tempo de Execução: 1.49
+	Memória usada: 21872
+	CPU usada: 379%
+
+O Processador 7 achou a Resposta
+zzzz : cb990257247b592eaaed54b84b32d96b7904fd95
+mpirun -np 16 -quiet EP2 cb990257247b592eaaed54b84b32d96b7904fd95
+	Tempo de Execução: 3.33
+	Memória usada: 21888
+	CPU usada: 939%
+
+O Processador 8 achou a Resposta
+EEEE : c49c34e2014a2da270eeae07d730726ffddd3196
+mpirun -np 16 -quiet EP2 c49c34e2014a2da270eeae07d730726ffddd3196
+	Tempo de Execução: 4.89
+	Memória usada: 21824
+	CPU usada: 1078%
+
+O Processador 7 achou a Resposta
+AAAA : e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+mpirun -np 16 -quiet EP2 e2512172abf8cc9f67fdd49eb6cacf2df71bbad3
+	Tempo de Execução: 4.70
+	Memória usada: 21856
+	CPU usada: 1067%
+
+O Processador 10 achou a Resposta
+MMMM : 2f5005d0e6ce2fb551cb5f2bdb9740a5ca7c28db
+mpirun -np 16 -quiet EP2 2f5005d0e6ce2fb551cb5f2bdb9740a5ca7c28db
+	Tempo de Execução: 5.22
+	Memória usada: 21856
+	CPU usada: 1076%
+
+O Processador 13 achou a Resposta
+ZZZZ : 9865d483bc5a94f2e30056fc256ed3066af54d04
+mpirun -np 16 -quiet EP2 9865d483bc5a94f2e30056fc256ed3066af54d04
+	Tempo de Execução: 7.17
+	Memória usada: 21856
+	CPU usada: 1187%
+
+O Processador 14 achou a Resposta
+0000 : 39dfa55283318d31afe5a3ff4a0e3253e2045e43
+mpirun -np 16 -quiet EP2 39dfa55283318d31afe5a3ff4a0e3253e2045e43
+	Tempo de Execução: 2.38
+	Memória usada: 21856
+	CPU usada: 756%
+
+O Processador 15 achou a Resposta
+9999 : 4170ac2a2782a1516fe9e13d7322ae482c1bd594
+mpirun -np 16 -quiet EP2 4170ac2a2782a1516fe9e13d7322ae482c1bd594
+	Tempo de Execução: 5.90
+	Memória usada: 21824
+	CPU usada: 1114%
+
+O Processador 1 achou a Resposta
+amor : f56fe68c0a0ae4ee32e66f54df90db08ad4334eb
+mpirun -np 16 -quiet EP2 f56fe68c0a0ae4ee32e66f54df90db08ad4334eb
+	Tempo de Execução: 1.50
+	Memória usada: 21856
+	CPU usada: 361%
+
+O Processador 3 achou a Resposta
+love : 9f2feb0f1ef425b292f2f94bc8482494df430413
+mpirun -np 16 -quiet EP2 9f2feb0f1ef425b292f2f94bc8482494df430413
+	Tempo de Execução: 5.91
+	Memória usada: 21824
+	CPU usada: 1140%
+
+	CPU usada: 716%
+
+mpirun -np 16 -quiet EP2 9d4e1e23bd5b727046a9e3b4b7db57bd8d6ee684
+	Tempo de Execução: 5.49
+	Memória usada: 21840
+	CPU usada: 1120%
+
+O Processador 5 achou a Resposta
+sexy : bf5afc18dfbca6ff28e36ac47bda8ab40d47c990
+mpirun -np 16 -quiet EP2 bf5afc18dfbca6ff28e36ac47bda8ab40d47c990
+	Tempo de Execução: 4.19
+	Memória usada: 21872
+	CPU usada: 1031%
+
+O Processador 7 achou a Resposta
+A1B2 : 25ef54533baa49d7cc4e64d478ecd1d2fd55d761
+mpirun -np 16 -quiet EP2 25ef54533baa49d7cc4e64d478ecd1d2fd55d761
+	Tempo de Execução: 5.31
+	Memória usada: 21856
+	CPU usada: 1110%
+
+O Processador 1 achou a Resposta
+aaaaa : df51e37c269aa94d38f93e537bf6e2020b21406c
+mpirun -np 16 -quiet EP2 df51e37c269aa94d38f93e537bf6e2020b21406c
+	Tempo de Execução: 6.91
+	Memória usada: 21872
+	CPU usada: 1109%
+
+O Processador 4 achou a Resposta
+mmmmm : 24d3c6fe567c74749a2534b1ca2bd3d611528e27
+mpirun -np 16 -quiet EP2 24d3c6fe567c74749a2534b1ca2bd3d611528e27
+	Tempo de Execução: 24.68
+	Memória usada: 21872
+	CPU usada: 1335%
+
+O Processador 7 achou a Resposta
+zzzzz : a2b7caddbc353bd7d7ace2067b8c4e34db2097a3
+mpirun -np 16 -quiet EP2 a2b7caddbc353bd7d7ace2067b8c4e34db2097a3
+	Tempo de Execução: 131.58
+	Memória usada: 21872
+	CPU usada: 1388%
+
+O Processador 7 achou a Resposta
+AAAAA : c1fe3a7b487f66a6ac8c7e4794bc55c31b0ef403
+mpirun -np 16 -quiet EP2 c1fe3a7b487f66a6ac8c7e4794bc55c31b0ef403
+	Tempo de Execução: 223.53
+	Memória usada: 21840
+	CPU usada: 1393%
+
+O Processador 8 achou a Resposta
+EEEEE : af660090b01149c4cd9581bca5e30ceaacc675be
+mpirun -np 16 -quiet EP2 af660090b01149c4cd9581bca5e30ceaacc675be
+	Tempo de Execução: 225.75
+	Memória usada: 21856
+	CPU usada: 1393%
+
+O Processador 10 achou a Resposta
+MMMMM : 51e8087c726748d21d04753b342826154c269d69
+mpirun -np 16 -quiet EP2 51e8087c726748d21d04753b342826154c269d69
+	Tempo de Execução: 245.22
+	Memória usada: 21824
+	CPU usada: 1394%
+
+O Processador 13 achou a Resposta
+ZZZZZ : f888fa8a61ba9a53a45f040a4bbb8b2fc1f64444
+mpirun -np 16 -quiet EP2 f888fa8a61ba9a53a45f040a4bbb8b2fc1f64444
+	Tempo de Execução: 350.38
+	Memória usada: 21888
+	CPU usada: 1395%
+
+O Processador 14 achou a Resposta
+00000 : 6934105ad50010b814c933314b1da6841431bc8b
+mpirun -np 16 -quiet EP2 6934105ad50010b814c933314b1da6841431bc8b
+	Tempo de Execução: 80.69
+	Memória usada: 21872
+	CPU usada: 1381%
+
+O Processador 15 achou a Resposta
+99999 : a045b7efa463c6ed195c644163f4168952fbd34a
+mpirun -np 16 -quiet EP2 a045b7efa463c6ed195c644163f4168952fbd34a
+	Tempo de Execução: 479.21
+	Memória usada: 21856
+	CPU usada: 1396%
+
+O Processador 15 achou a Resposta
+54321 : 348162101fc6f7e624681b7400b085eeac6df7bd
+mpirun -np 16 -quiet EP2 348162101fc6f7e624681b7400b085eeac6df7bd
+	Tempo de Execução: 178.70
+	Memória usada: 21856
+	CPU usada: 1391%
+
+O Processador 1 achou a Resposta
+abc12 : 8fe670fef2b8c74ef8987cdfccdb32e96ad4f9a2
+mpirun -np 16 -quiet EP2 8fe670fef2b8c74ef8987cdfccdb32e96ad4f9a2
+	Tempo de Execução: 8.50
+	Memória usada: 21840
+	CPU usada: 1216%
+
+O Processador 7 achou a Resposta
+AbCdE : 43d4f12195d1badef1cc499d9b2756f69cccdc5b
+mpirun -np 16 -quiet EP2 43d4f12195d1badef1cc499d9b2756f69cccdc5b
+	Tempo de Execução: 187.91
+	Memória usada: 21904
+	CPU usada: 1391%
+
+O Processador 1 achou a Resposta
+admin : d033e22ae348aeb5660fc2140aec35850c4da997
+mpirun -np 16 -quiet EP2 d033e22ae348aeb5660fc2140aec35850c4da997
+	Tempo de Execução: 11.64
+	Memória usada: 21856
+	CPU usada: 1267%
+
+O Processador 3 achou a Resposta
+jesus : 8d5004c9c74259ab775f63f7131da077814a7636
+mpirun -np 16 -quiet EP2 8d5004c9c74259ab775f63f7131da077814a7636
+	Tempo de Execução: 100.75
+	Memória usada: 21872
+	CPU usada: 1384%
+
+O Processador 2 achou a Resposta
+globo : 31039edaddb33cff8a061ed0a3a3ba4d8515b886
+mpirun -np 16 -quiet EP2 31039edaddb33cff8a061ed0a3a3ba4d8515b886
+	Tempo de Execução: 205.88
+	Memória usada: 21872
+	CPU usada: 1391%
+
+O Processador 4 achou a Resposta
+money : c95259de1fd719814daef8f1dc4bd64f9d885ff0
+mpirun -np 16 -quiet EP2 c95259de1fd719814daef8f1dc4bd64f9d885ff0
+	Tempo de Execução: 27.02
+	Memória usada: 21840
+	CPU usada: 1342%
+
+O Processador 4 achou a Resposta
+ninja : 04a4fce796c2cf39c53220ec3b8e22e3b2f24615
+mpirun -np 16 -quiet EP2 04a4fce796c2cf39c53220ec3b8e22e3b2f24615
+	Tempo de Execução: 108.26
+	Memória usada: 21888
+	CPU usada: 1385%
+
+O Processador 5 achou a Resposta
+senha : 7751a23fa55170a57e90374df13a3ab78efe0e99
+mpirun -np 16 -quiet EP2 7751a23fa55170a57e90374df13a3ab78efe0e99
+	Tempo de Execução: 186.14
+	Memória usada: 21872
+	CPU usada: 1391%
+
+O Processador 7 achou a Resposta
+A2019 : bcd4262b2d08176dd257fe243388194b69517378
+mpirun -np 16 -quiet EP2 bcd4262b2d08176dd257fe243388194b69517378
+	Tempo de Execução: 271.31
+	Memória usada: 21888
+	CPU usada: 1393%
+
+O Processador 14 achou a Resposta
+012ab : f024f8f5635ba8e56a175a884fa323d39ca01f04
+mpirun -np 16 -quiet EP2 f024f8f5635ba8e56a175a884fa323d39ca01f04
+	Tempo de Execução: 78.69
+	Memória usada: 21808
+	CPU usada: 1378%
+
+O Processador 1 achou a Resposta
+aaaaaa : f7a9e24777ec23212c54d7a350bc5bea5477fdbb
+mpirun -np 16 -quiet EP2 f7a9e24777ec23212c54d7a350bc5bea5477fdbb
+	Tempo de Execução: 368.46
+	Memória usada: 21808
+	CPU usada: 1395%
+
+O Processador 4 achou a Resposta
+mmmmmm : cecec3ec436bf58a4ecce3e179835e25ff691f3e
+mpirun -np 16 -quiet EP2 cecec3ec436bf58a4ecce3e179835e25ff691f3e
+	Tempo de Execução: 1512.14
+	Memória usada: 21856
+	CPU usada: 1399%
+
+O Processador 7 achou a Resposta
+zzzzzz : 984ff6ee7c78078d4cb1ca08255303fb8741d986
+mpirun -np 16 -quiet EP2 984ff6ee7c78078d4cb1ca08255303fb8741d986
+	Tempo de Execução: 8128.79
+	Memória usada: 21824
+	CPU usada: 1399%
+
+O Processador 7 achou a Resposta
+AAAAAA : 2d2929e0f1bca99d9652924ce73b7969d33ff429
+mpirun -np 16 -quiet EP2 2d2929e0f1bca99d9652924ce73b7969d33ff429
+	Tempo de Execução: 14318.90
+	Memória usada: 21888
+	CPU usada: 1400%
+
+O Processador 8 achou a Resposta
+EEEEEE : 8a1d9b464a3fd8c9e5f06af5b43005029d7c16b1
+mpirun -np 16 -quiet EP2 8a1d9b464a3fd8c9e5f06af5b43005029d7c16b1
+	Tempo de Execução: 14395.43
+	Memória usada: 21872
+	CPU usada: 1400%
+
+O Processador 10 achou a Resposta
+MMMMMM : 3d486f74b9975ec5b707ad03897c3d8e1f998dd9
+mpirun -np 16 -quiet EP2 3d486f74b9975ec5b707ad03897c3d8e1f998dd9
+	Tempo de Execução: 15328.53
+	Memória usada: 21840
+	CPU usada: 1398%
+
+O Processador 13 achou a Resposta
+ZZZZZZ : 18f30f1ba4c62e2b460e693306b39a0de27d747c
+mpirun -np 16 -quiet EP2 18f30f1ba4c62e2b460e693306b39a0de27d747c
+	Tempo de Execução: 22634.28
+	Memória usada: 21840
+	CPU usada: 1394%
+
+O Processador 14 achou a Resposta
+000000 : c984aed014aec7623a54f0591da07a85fd4b762d
+mpirun -np 16 -quiet EP2 c984aed014aec7623a54f0591da07a85fd4b762d
+	Tempo de Execução: 4632.40
+	Memória usada: 21760
+	CPU usada: 1399%
+
+O Processador 15 achou a Resposta
+999999 : 1f5523a8f535289b3401b29958d01b2966ed61d2
+mpirun -np 16 -quiet EP2 1f5523a8f535289b3401b29958d01b2966ed61d2
+	Tempo de Execução: 25365.33
+	Memória usada: 21872
+	CPU usada: 1267%
+
+O Processador 4 achou a Resposta
+mateus : 4b288f73587b1db7700c9661ce011e3b92b36443
+mpirun -np 16 -quiet EP2 4b288f73587b1db7700c9661ce011e3b92b36443
+	Tempo de Execução: 391.66
+	Memória usada: 21888
+	CPU usada: 1395%
+
+O Processador 1 achou a Resposta
+ceunes : db278aa2cc708f2163a08987ac289a979430611f
+mpirun -np 16 -quiet EP2 db278aa2cc708f2163a08987ac289a979430611f
+	Tempo de Execução: 12065.53
+	Memória usada: 21824
+	CPU usada: 1400%

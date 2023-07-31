@@ -1,0 +1,11 @@
+Below are all perfect numbers till 34000000
+
+6 is a perfect number
+
+28 is a perfect number
+
+496 is a perfect number
+
+8128 is a perfect number
+
+33550336 is a perfect number

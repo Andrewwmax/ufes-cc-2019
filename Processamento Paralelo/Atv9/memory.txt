@@ -1,0 +1,49 @@
+./pi
+	Tempo de Execução: 0:11.39
+	Memória usada: 3740
+
+./pi
+	Tempo de Execução: 0:08.47
+	Memória usada: 3432
+
+./pi
+	Tempo de Execução: 0:21.95
+	Memória usada (kb): 3456
+
+./pi
+	Tempo de Execução: 0:11.38
+	Memória usada (kb): 3880
+
+./pi
+	Tempo de Execução: 1:54.84
+	Memória usada (kb): 3784
+
+Command terminated by signal 11
+./pi
+	Tempo de Execução: 0:00.12
+	Memória usada (kb): 3448
+
+Command terminated by signal 11
+./pi
+	Tempo de Execução: 0:00.12
+	Memória usada (kb): 3448
+
+Command terminated by signal 11
+./pi
+	Tempo de Execução: 0:00.12
+	Memória usada (kb): 3356
+
+Command terminated by signal 11
+./pi
+	Tempo de Execução: 0:00.12
+	Memória usada (kb): 3484
+
+Command terminated by signal 2
+./pi 4
+	Tempo de Execução: 0:44.76
+	Memória usada (kb): 3588
+
+./pi 4
+	Tempo de Execução: 0:01.13
+	Memória usada (kb): 3844
+

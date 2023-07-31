@@ -1,0 +1,77 @@
+﻿###############################################################
+###  Tokens
+###############################################################
+
+<IF> -> if
+<WHILE> -> while
+<AP> -> (
+<FP> -> )
+<END> -> end
+<FOR> -> for
+<IGUAL> -> =
+<SINAL> -> + | -
+<OPAB> -> * | / | % | //
+<DP> -> :
+<VGL> -> ,
+<OPL> -> && | ‘||’
+<OPLN> -> !
+<OPB> -> <= | == | >= | < | > 
+<IN> -> in
+<BOOL> -> true | false
+<BREAK> -> break
+<NUM> -> ( 0 | ... | 9 )* (.)?( 0 | ... | 9 )+ / ( 0 | ... | 9 )+ (.)?( 0 | ... | 9 )*
+<VAR> -> ( a | b | ... | z | A | ... | Z | _ ) ( a | b | ... | z | A | ... | Z | _ | 0 | ... | 9 )*
+
+###############################################################
+###  Gramatica
+###############################################################
+G=(V,T,P,bloco_cod)
+
+bloco_cod -> bloco_cod if | bloco_cod while | bloco_cod atrib | bloco_cod exp | bloco_cod logic_exp | if | while | atrib | exp | logic_exp
+
+atrib -> <VAR><IGUAL>exp
+exp -> exp operator exp | <AP>exp<FP> | termo
+operator -> <OPAB> | <SINAL> | <OPB>
+termo -> <SINAL><NUM> | <NUM> | <VAR>
+
+logic_exp -> logic_exp <OPL> logic_exp | <OPLN> logic_exp | <AP> logic_exp <FP> | exp
+
+if -> <IF> condition bloco_cod <END>
+while -> <WHILE> condition bloco_cod <END>
+condition -> logic_exp | atrib_bloc
+
+for -> <FOR> atrib_for bloco_cod <END>
+atrib_for -> atrib_for <VGL> atrib_for | atrib_bloc
+atrib_bloc -> <VAR> element_atrib range
+element_atrib -> <IGUAL> | <IN> | <PERT>
+range -> <NUM><DP><NUM> | <NUM><DP><NUM><DP><NUM>
+
+###############################################################
+###  Gramatica Simplificada
+###############################################################
+
+bloco_cod -> comando bloco_cod
+comando -> if | while | for | atrib
+atrib -> <VAR><IGUAL> exp
+exp -> <AP>exp<FP> exp_aux | termo exp_aux
+exp_aux -> operator exp exp_aux | lambda  
+operator -> <OPAB> | <SINAL> | <OPB>
+termo -> <SINAL><NUM> | <NUM> | <VAR>
+
+
+logic_exp -> <OPLN> logic_exp logic_exp_aux | aux2 logic_exp_aux
+logic_exp_aux -> <OPL> logic_exp logic_exp_aux  | lambda 
+aux2 -> <AP> aux3 | termo exp_aux
+aux3 -> logic_exp <FP> | exp <FP>
+
+if -> <IF> logic_exp bloco_cod <END>
+while -> <WHILE> logic_exp bloco_cod <END>
+
+for -> <FOR> atrib_for bloco_cod <END>
+atrib_for -> atrib_bloc atrib_for_aux
+atrib_for_aux -> <VGL> atrib_for atrib_for_aux | lambda
+atrib_bloc -> <VAR> element_atrib range
+
+element_atrib -> <IGUAL> | <IN> | <PERT>
+range -> <NUM><DP><NUM> range_aux
+range_aux -> <DP><NUM> | lambda

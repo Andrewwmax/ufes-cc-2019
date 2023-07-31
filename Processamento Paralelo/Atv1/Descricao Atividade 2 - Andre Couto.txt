@@ -1,0 +1,23 @@
+Todos os códigos foram implementados em C e compilados com GNU gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0 (com a opção -O3 ativada, indicada no Gráfico).
+Os experimentos foram realizados em uma máquina Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz, com 8 GB de memória RAM e com Sistema Operacional Linux Mint 19.
+
+Versão 1:
+	int** multMatrix(int** mat1, int** mat2, int** result, int N){
+		for(int i = 0; i < N; i++)
+			for(int j = 0; j < N; j++)
+				for (int k = 0; k < N; k++)
+					result[i][j] += (mat1[i][k] * mat2[k][j]);
+	}
+
+Versão 2:
+	int** multMatrix2(int** mat1, int** mat2, int** result, int N){
+		register int soma = 0;
+		for(int i = 0; i < N; i++){
+			for(int j = 0; j < N; j++){
+				for (int k = 0; k < N; k++){
+					soma += (mat1[i][k] * mat2[k][j]);
+				}
+				result[i][j] = soma;
+			}
+		}
+	}

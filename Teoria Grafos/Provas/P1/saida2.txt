@@ -1,0 +1,63 @@
+Seja G um grafo, T uma arvore geradora de G e v € V(G).
+
+F 7 ancl ; >
+a) (1,0 ponto) E verdade que se v tem grau maior que 1 em 7’, entao v é vértice de corte em G? Justifique.
+
+Resposta: Nao. Pois v pode ser um vértice pertencente a um ciclo em G. A &rvore geradora nao
+
+consideraria uma das arestas de tal ciclo.
+5 - < 2 pS cae,
+b) (1,0 ponto) E verdade que se v é vértice de corte em G entéo v tem grau maior que lem T? Justifique.
+
+Resposta: Sim. Sejam x,y € V, dois vértices de G que nao sao adjacentes. Suponha que existe um
+caminho que liga z a y em G que passa por v € V. Se v é um vértice de corte em G, entéo nao ha
+outro caminho que liga x a y (caso contrario, v nao seria um vértice de corte), logo o grau de v é no
+minimo 2 (uma aresta de um caminho de ¢ a v e uma aresta de um caminho de v ay). a
+
+c) (1,0 ponto) Um vértice de corte em um grafo pode ser folha de uma arvore geradora deste grafo?
+Justifique.
+Resposta: Nao. Se v é um vértice de corte, entao ele pertence a um caminho que liga dois vértices
+distintos de G, suponha que sejam os vértices a e y, de forma que o caminho de « para y, passando por
+v, 60 tinico que liga x a y (caso contrario, v nao seria vértice de corte). Logo, v deve ter, no minimo,
+duas arestas incidentes a ele, uma que pertence ao caminho de x a v e outra aresta que pertence ao
+caminho de v a y. Dessa forma, podemos concluir que 0 grau de v é no minimo 2. a
+
+(1,5 pontos) Seja A(T) o maior grau de vértice de uma arvore T. Prove que toda arvore T tem (pelo
+menos) A(T) folhas.
+
+Resposta: Seja T uma arvore, v o vértice de maior grau de T e n o nimero de vértices de T. Do vértice
+v partem A(T) arestas. O menor namero de folhas de T ocorre quando T possui 1 vértice com grau
+A(T), A(T) vértices com grau 1 (as folhas), en — A(T’) — 1 vértices com grau 2. Neste caso os vértices
+com grau 2 serao aqueles que compoem os caminhos de v a algum vértice folha de T. Caso haja algum
+
+vértice diferente de v com grau maior que 2 em um desses caminhos, entao T possui um mimero de folhas
+maior que A(T’). S
+
+Seja T’ uma arvore com n vértices, e v 0 seu vértice de maior grau (ou seja, d(v) = A(T’)). Sem perda de
+generalidade e para minimizar o nimero de vértices folhas de T’, vamos supor que apenas v tenha grau
+maior que 2 e os demais vértices nao-folha tenham seus graus iguais a 2. Vamos supor ainda que T’ tem
+A —1 folhas. Isso significa que uma das arestas incidentes a v, denote-a por e, nao leva v a um vértice
+folha, ou seja, todos os vértices alcangaveis a partir de v que passam por e possuem grau igual a 2. Como
+
+n é finito, em algum momento, tal caminho se fecha em um ciclo. O que contradiz o fato de T’ ser uma
+arvore. Logo, T” deve possuir A(T") folhas a
+
+Sobre o algoritmo de Prim, responda:
+
+a) (0,5 ponto) Qual é 0 objetivo do algoritmo?
+Resposta: Encontrar uma drvore geradora minima para o grafo de entrada. a
+
+b) (2,0 pontos) Enumere os passos do algoritmo.
+Resposta:
+
+  
+  
+
+© Seja Q o conjunto de todos os vértices de G que nao foram inseridas na /
+construfda. é
+
+* Considere d[v] a estimativa de distancia de um vértice em Q & AGM
+x{v] seu predecessor na arvore geradora minima com raiz em r.
+
+ 
+

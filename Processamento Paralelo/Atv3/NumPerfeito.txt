@@ -1,0 +1,17 @@
+6 ehPerfeito, tempo de cálculo0.0000000000
+28 ehPerfeito, tempo de cálculo0.0000010000
+496 ehPerfeito, tempo de cálculo0.0000010000
+8128 ehPerfeito, tempo de cálculo0.0000010000
+33550336 ehPerfeito, tempo de cálculo0.0000700000
+8589869056 ehPerfeito, tempo de cálculo0.0008480000
+137438691328 ehPerfeito, tempo de cálculo0.0035040000
+2305843008139952128 ehPerfeito, tempo de cálculo13.4390050000
+
+6			 ehPerfeito, tempo de cálculo 0.0000010000 segs
+28			 ehPerfeito, tempo de cálculo 0.0000000000 segs
+496			 ehPerfeito, tempo de cálculo 0.0000000000 segs
+8128			 ehPerfeito, tempo de cálculo 0.0000010000 segs
+33550336			 ehPerfeito, tempo de cálculo 0.0000550000 segs
+8589869056			 ehPerfeito, tempo de cálculo 0.0009910000 segs
+137438691328			 ehPerfeito, tempo de cálculo 0.0036950000 segs
+2305843008139952128			 ehPerfeito, tempo de cálculo 13.4290760000 segs

@@ -1,0 +1,88 @@
+# Analise de resultados no Cluster Ceunes - André Thiago Borghi Couto.
+## Nas execuções do EP1 no cluster, tivemos os seguintes resultados:
+
+"./EP1Paralel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 1204.59
+	Percent of CPU this job got: 757%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:39.20
+	Maximum resident set size (kbytes): 3767120	
+
+"./EP1Paralel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 1199.02
+	Percent of CPU this job got: 751%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:39.65
+	Maximum resident set size (kbytes): 3764496
+
+"./EP1Paralel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 1131.50
+	Percent of CPU this job got: 1099%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:42.94
+	Maximum resident set size (kbytes): 3763840
+
+"./EP1BSTParalel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 8.60
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.83
+	Maximum resident set size (kbytes): 3763504
+
+"./EP1Paralel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 1130.75
+	Percent of CPU this job got: 1094%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:43.38
+	Maximum resident set size (kbytes): 3761392
+
+"./EP1BSTParalel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 8.57
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.83
+	Maximum resident set size (kbytes): 3763712
+
+"./EP1Paralel 24 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 1192.45
+	Percent of CPU this job got: 1472%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:21.00
+	Maximum resident set size (kbytes): 3764960
+
+"./EP1BSTParalel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 8.29
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.71
+	Maximum resident set size (kbytes): 3765200
+
+"./EP1Paralel 36 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 1194.96
+	Percent of CPU this job got: 1465%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:21.59
+	Maximum resident set size (kbytes): 3762832
+
+"./EP1BSTParalel 4 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 8.27
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.73
+	Maximum resident set size (kbytes): 3762736
+
+"./EP1Paralel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 1130.81
+	Percent of CPU this job got: 1099%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:42.96
+	Maximum resident set size (kbytes): 3763808
+
+"./EP1BSTParalel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 8.31
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.72
+	Maximum resident set size (kbytes): 3762656
+
+"./EP1Paralel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 1130.76
+	Percent of CPU this job got: 1093%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:43.51
+	Maximum resident set size (kbytes): 3762112
+
+"./EP1BSTParalel 12 ../../EP1/SenhasVazadas.txt ../../EP1/5000.txt"
+	User time (seconds): 8.31
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.74
+	Maximum resident set size (kbytes): 3764256
+
+Seguindo comandos e resultados, obtivemos desempenho muito grande, levando em conta a quantidade de threads usadas, porém nem todo aumento trouxe resultados esperados, como no caso de 12 para 24 e 36, (Talvez a configuração não acompanhou os processadores do cluster, ou tenha limitação do compilador), também podemos ver a quantidade de recursos que foi usado durante o processo utilizando [env time -v], que retorna demais informações da execução do processo, após todas as execuções comparando a utilização da CPU que é a soma do uso das threads e a memória utilizada que foi alocada durante a execução, em resumo temos o tempo estavel e um salto melhorado utilizando 24 threads, no sequencial paralelizado e uma extrema estabilidade com a busca binária.

@@ -1,0 +1,247 @@
+./EP1Seq 0 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:36.17
+	Memória usada: 1051808
+
+./EP1Paralel 0 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:19.84
+	Memória usada: 1051772
+
+./EP1BSTSeq 0 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.28
+	Memória usada: 1051940
+
+./EP1BSTParalel 0 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.88
+	Memória usada: 1052048
+
+./EP1Hash 0 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:09.86
+	Memória usada: 1373080./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.00
+	Memória usada: 1052052
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.28
+	Memória usada: 1052060
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.82
+	Memória usada: 1052008
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.82
+	Memória usada: 1052008
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.24
+	Memória usada: 1052008
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.82
+	Memória usada: 1051848
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.05
+	Memória usada: 1051800
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.97
+	Memória usada: 1051808
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.90
+	Memória usada: 1051796
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.11
+	Memória usada: 1051972
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.13
+	Memória usada: 1051948
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.10
+	Memória usada: 1051848
+
+Command terminated by signal 6
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.38
+	Memória usada: 1051908
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.11
+	Memória usada: 1051808
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.52
+	Memória usada: 1051916
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.51
+	Memória usada: 1051796
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.80
+	Memória usada: 1051800
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.58
+	Memória usada: 1051948
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.77
+	Memória usada: 1051904
+
+Command terminated by signal 6
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:09.60
+	Memória usada: 1051952
+
+Command terminated by signal 6
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:09.57
+	Memória usada: 1051972
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:10.51
+	Memória usada: 1051808
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:10.56
+	Memória usada: 1051972
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:10.64
+	Memória usada: 1051748
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/500.txt
+	Tempo de Execução: 0:10.82
+	Memória usada: 1051792
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:11.13
+	Memória usada: 1051948
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:10.79
+	Memória usada: 1051936
+
+Command terminated by signal 9
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 4:50.32
+	Memória usada: 6623204
+
+Command terminated by signal 2
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:22.43
+	Memória usada: 3866820
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:11.10
+	Memória usada: 1051792
+
+./EP1BSTParalel 3 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:10.80
+	Memória usada: 1051844
+
+./EP1BSTParalel 3 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:10.78
+	Memória usada: 1051800
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:10.83
+	Memória usada: 1051812
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:11.22
+	Memória usada: 1051892
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/100.txt
+	Tempo de Execução: 0:10.93
+	Memória usada: 1051844
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.08
+	Memória usada: 1051812
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:11.14
+	Memória usada: 1051800
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:19.74
+	Memória usada: 1051820
+
+./EP1Paralel 42 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 1:37.98
+	Memória usada: 1051888
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:10.89
+	Memória usada: 1051812
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:10.87
+	Memória usada: 1051800
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:10.99
+	Memória usada: 1051796
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:10.91
+	Memória usada: 1051796
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:11.15
+	Memória usada: 1051916
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:11.05
+	Memória usada: 1051892
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:11.14
+	Memória usada: 1051792
+
+./EP1BSTParalel 13 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:11.09
+	Memória usada: 1051800
+
+./EP1BSTParalel 0 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:14.29
+	Memória usada: 1051792
+
+./EP1BSTParalel 0 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:20.62
+	Memória usada: 1051932
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.56
+	Memória usada: 1051968
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.37
+	Memória usada: 1051800
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:11.47
+	Memória usada: 1051948
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/2.txt
+	Tempo de Execução: 0:11.34
+	Memória usada: 1051916
+
+./EP1BSTParalel 4 txt/SenhasVazadas.txt txt/2.txt
+	Tempo de Execução: 0:11.47
+	Memória usada: 1051900
+
+./EP1Hash 0 txt/SenhasVazadas.txt txt/1000.txt
+	Tempo de Execução: 0:10.06
+	Memória usada: 1373052
+
+./EP1Hash 0 txt/SenhasVazadas.txt txt/5000.txt
+	Tempo de Execução: 0:09.58
+	Memória usada: 1373700
+
