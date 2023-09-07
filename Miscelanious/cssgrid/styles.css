@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     /* grid-template-columns: 300px 1fr; */
+    margin: 10px;
 }
 
 .card-container {
@@ -16,29 +17,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* max-height: 350px; */
     margin: 4px;
-    padding: 5px;
+    /* padding: 15px; */
     background-color: cornflowerblue;
 }
 
-.card .h1 {
+.card .title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-size: 20pt;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
 }
 
-/* .card .h2 {
-    font-size: 24pt;
-    /* position: relative; 
-    top: -50px;
-} */
-
-.card .h3 {
-    font-size: 20pt;
+.card .usage {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 25pt;
     position: relative;
     top: -30px;
 }
 
-.card .h4 {
+.card .status {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-size: 14pt;
     position: relative;
     top: -10px;
@@ -49,6 +54,7 @@
     align-items: center;
     position: relative;
     top: -10px;
+    max-height: 90% !important;
     /* height: 30vh; */
     /* width: 30vh; */
 }
@@ -86,7 +92,20 @@ li a:hover {
     background-color: #111111;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1870px) {
+    body {
+        background-color: #bbbbbb;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 31vh 31vh 31vh 31vh;
+
+    }
+}
+
+@media only screen and (max-width: 1620px) {
     body {
         background-color: #bbbbbb;
     }
@@ -94,21 +113,51 @@ li a:hover {
     .card-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 31vh 31vh 31vh 31vh 31vh;
+
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
+    body {
+        background-color: #bbbbbb;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 31vh 31vh 31vh 31vh 31vh 31vh;
+
+    }
+}
+
+@media only screen and (max-width: 985px) {
     body {
         background-color: #999999;
     }
 
     .card-container {
         display: grid;
+        min-width: 1fr;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 31vh);
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 670px) {
+    body {
+        background-color: #444444;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(18, 31vh);
+    }
+}
+
+/* 
+@media only screen and (max-width: 501px) {
     body {
         background-color: #444444;
     }
@@ -117,4 +166,4 @@ li a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
