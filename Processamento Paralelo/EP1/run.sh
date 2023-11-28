@@ -8,6 +8,8 @@
 
 # [Finished in 10714.8s]
 
+# https://man7.org/linux/man-pages/man1/time.1.html para identificar os -f 'formato' da saida do env time
+
 g++ -O3 EP1Seq.cpp -o EP1Seq && env time -f "%C\n\tTempo de Execução: %E\n\tMemória usada: %M\n" -o memory.txt -a ./EP1Seq 0 txt/SenhasVazadas.txt txt/1000.txt
 g++ -O3 -pthread EP1Paralel.cpp -o EP1Paralel  && env time -f "%C\n\tTempo de Execução: %E\n\tMemória usada: %M\n" -o memory.txt -a ./EP1Paralel 0 txt/SenhasVazadas.txt txt/1000.txt
 g++ -O3 EP1BSTSeq.cpp -o EP1BSTSeq  && env time -f "%C\n\tTempo de Execução: %E\n\tMemória usada: %M\n" -o memory.txt -a ./EP1BSTSeq 0 txt/SenhasVazadas.txt txt/1000.txt
