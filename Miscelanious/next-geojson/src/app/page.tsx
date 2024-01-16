@@ -2,7 +2,7 @@
 
 import "ol/ol.css";
 
-import React, { useCallback } from "react";
+import React, { useCallback, useRef } from "react";
 import { fromLonLat } from "ol/proj";
 import GeoJSON from "ol/format/GeoJSON";
 // import { RMap, ROSM, RLayerVector, RStyle, RControl, RLayerTile } from "rlayers";
@@ -26,7 +26,6 @@ const RLayerTile = dynamic(() => import("rlayers").then((module) => module.RLaye
 // });
 
 const center = fromLonLat([-40.12736, -19.500781]);
-
 export default function Simple(): JSX.Element {
 	// basic map
 	// return (
