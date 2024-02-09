@@ -1,108 +1,96 @@
-/******************************************************************************
-							 heap.c
-   Este programa implementa um heap MAXIMO em uma implementacao estatica de uma 
-   arvore binaria. Nao usa a posicao 0 (zero) do arranjo.
- ******************************************************************************/
-#include <malloc.h>
+// C implementation of Heap Sort
 #include <stdio.h>
-#include <time.h>
-#include <string.h>
-#include <math.h>
+#include <stdlib.h>
 
-#define PARENT(i) ((i-1) / 2)
-#define LINE_WIDTH 145
-#define true 1
-#define false 0
-
+// A heap has current size and array of elements
 typedef struct {
-	int *A;
-	int tamanhoAtual;
-	int tamanhoMaximo;
-} HEAP;
+    int tam;
+    int* array;
+} MaxHeap;
 
-void inicializarHeap(HEAP *h, int tamanhoMax) {
-	h->A = (int*) malloc(sizeof (int)*(tamanhoMax + 1));
-	h->tamanhoAtual = 0;
-	h->tamanhoMaximo = tamanhoMax;
+// A utility function to swap to integers
+void troca(int* a, int* b){
+    int c = *a;
+    *a = *b;
+    *b = c;
 }
 
-void destruirHeap(HEAP * h) {
-	int tamanho = h->tamanhoMaximo;
-	free(h->A);
-	h->tamanhoMaximo = 0;
-	h->tamanhoAtual = 0;
+// The main function to heapify a Max Heap. The function
+// assumes that everything under given root (element at
+// index idx) is already heapified
+void heapMaximo(MaxHeap* maxHeap, int index){
+    int maior = index;  // Initialize largest as root
+    int esquerdo = (index << 1) + 1;  // left = 2*idx + 1
+    int direito = (index + 1) << 1; // right = 2*idx + 2
+
+    // See if left child of root exists and is greater than
+    // root
+    if (esquerdo < maxHeap->tam &&
+        maxHeap->array[esquerdo] > maxHeap->array[maior])
+        maior = esquerdo;
+
+    // See if right child of root exists and is greater than
+    // the largest so far
+    if (direito < maxHeap->tam &&
+        maxHeap->array[direito] > maxHeap->array[maior])
+        maior = direito;
+
+    // Change root, if needed
+    if (maior != index)
+    {
+        troca(&maxHeap->array[maior], &maxHeap->array[index]);
+        heapMaximo(maxHeap, maior);
+    }
 }
 
-int pai(int i) { return i / 2; }
+// A utility function to create a max heap of given capacity
+MaxHeap* heapConstrutor(int *array, int tam){
+    int i;
+    MaxHeap* maxHeap = (MaxHeap*) malloc(sizeof(MaxHeap));
+    maxHeap->tam = tam;   // initialize size of heap
+    maxHeap->array = array; // Assign address of first element of array
 
-int filhoEsquerda(int i) { return 2 * i; }
-
-int filhoDireita(int i) { return 2 * i + 1; }
-
-/* metodo auxiliar que pressupoe que o heap para qualquer j>i estah ordenado
-   porem o elemento i nao eh necessariamente maior que seus filhos           */
-void maxHeapify(HEAP * h, int i) {
-	int esq = filhoEsquerda(i);
-	int dir = filhoDireita(i);
-	int temp;
-	int maior = i;
-	if ((esq <= h->tamanhoAtual) && (h->A[esq] > h->A[i])) maior = esq;
-	if ((dir <= h->tamanhoAtual) && (h->A[dir] > h->A[maior])) maior = dir;
-	if (maior != i) {
-		temp = h->A[i];
-		h->A[i] = h->A[maior];
-		h->A[maior] = temp;
-		maxHeapify(h, maior);
-	}
+    // Start from bottommost and rightmost internal mode and heapify all
+    // internal modes in bottom up way
+    for (i = (maxHeap->tam - 2) / 2; i >= 0; --i)
+        heapMaximo(maxHeap, i);
+    return maxHeap;
 }
 
-// Constroi heap a partir do arranjo usando o metodo maxHeapify
-void construirHeapMaximo(HEAP * h) {
-	int i;
-	int metadeTamanho = h->tamanhoAtual / 2;
-	for (i = metadeTamanho; i > 0; i--) maxHeapify(h, i);
+// The main function to sort an array of given size
+void heapSort(int* array, int tam){
+    // Build a heap from the input data.
+    MaxHeap* maxHeap = heapConstrutor(array, tam);
+
+    // Repeat following steps while heap size is greater than 1.
+    // The last element in max heap will be the minimum element
+    while (maxHeap->tam > 1){
+        // The largest item in Heap is stored at the root. Replace
+        // it with the last item of the heap followed by reducing the
+        // size of heap by 1.
+        troca(&maxHeap->array[0], &maxHeap->array[maxHeap->tam - 1]);
+        --maxHeap->tam;  // Reduce heap size
+
+        // Finally, heapify the root of tree.
+        heapMaximo(maxHeap, 0);
+    }
 }
 
-// Insere no final do arranjo do heap
-int inserirForaDeOrdem(HEAP * h, int valor) {
-	if (h->tamanhoAtual < h->tamanhoMaximo) {
-		(h->tamanhoAtual)++;
-		h->A[h->tamanhoAtual] = valor;
-		return true;
-	}
-	return false;
+// A utility function to print a given array of given size
+void printArray(int* arr, int tam){
+    int i;
+    for (i = 0; i < tam; ++i)
+        printf("%d ", arr[i]);
 }
 
-// Imprime o arranjo (na ordem que estiver)
-void imprimirArranjo(HEAP h) {
-	int tamanho = h.tamanhoAtual;
-	int i;
-	for (i = 1; i <= tamanho; i++) printf("%d ", h.A[i]);
-	printf("\n");
-}
+/* Driver program to test above functions */
+int main(){
+    int arr[] = {25,40,55,20,44,35,38,99,10,65,50};
+    int tam = sizeof(arr)/sizeof(arr[0]);
 
-// Imprime elementos em ordem decrescente e esvazia o heap
-void heapSort(HEAP * h) {
-	int tamanho = h->tamanhoAtual;
-	int i, temp;
-	construirHeapMaximo(h); // se o arranjo jah for um heap, nao precisa desta linha
-	for (i = tamanho; i > 1; i--) {
-		temp = h->A[1];
-		h->A[1] = h->A[i];
-		h->A[i] = temp;
-		//printf("%d ",temp);
-		(h->tamanhoAtual)--;
-		maxHeapify(h, 1);
-	}
-	//printf("\n");
-	h->tamanhoAtual = tamanho;
-}
+    heapSort(arr, tam);
 
-int inserirHeap(HEAP * h, int chave) {
-	int i, temp;
-	if (h->tamanhoAtual == h->tamanhoMaximo) return false;
-	(h->tamanhoAtual)++;
-	i = h->tamanhoAtual;
-	h->A[i] = chave;
-	while ((i > 1) && (h->A[pai(i)] < h->A[i])) {
-		tem
+    printf("\nSorted array is \n");
+    printArray(arr, tam);
+    return 0;
+}
